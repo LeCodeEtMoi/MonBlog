@@ -1,6 +1,6 @@
 theme = "hermit_zola"
 # The URL the site will be built for
-base_url = "https://lecodeetmoi.github.io/MonBlog/"
+base_url = "https://LeCodeEtMoi.github.io/MonBlog/"
 
 # Used in RSS by default
 title = "Le Blog du Pingouin"
@@ -22,7 +22,7 @@ highlight_code = true
 [extra]
 home_subtitle = "Ce qui doit arriver arrivera -Spike Spigeal"
 
-home_logo = "https://cdn-icons-png.freepik.com/512/1805/1805806.png?ga=GA1.1.795171737.1713953483"
+home_logo = "./content/img/1805806.png"
 
 footer_copyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
