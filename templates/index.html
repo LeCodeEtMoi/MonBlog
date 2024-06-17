@@ -29,6 +29,25 @@
   {% if config.generate_feed %}
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path=config.feed_filename, trailing_slash=false) }}">
   {% endif %}
+  <style>
+  	#spotlight {
+  display: flex;
+  align-items: center;
+}
+
+#home-center {
+  flex: 1;
+  text-align: center;
+}
+
+#home-title {
+  margin-bottom: 0; /* pour éviter l'espace sous le titre */
+}
+
+#home_logo {
+  margin-left: 340px; /* pour ajouter un espace entre le titre et l'image */
+}
+  </style>
 
   <body id="page">
 
@@ -37,6 +56,7 @@
 	
 	{% block title %}
 	<div id="spotlight" class="animated fadeIn">
+		<img id="home_logo" src="{{config.extra.home_logo}}" height=15% width="20%">
 	  <div id="home-center">
 		<h1 id="home-title">{{config.title}}</h1>
 		<p id="home-subtitle">{{config.extra.home_subtitle}}</p>
