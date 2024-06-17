@@ -22,7 +22,7 @@ highlight_code = true
 [extra]
 home_subtitle = "Ce qui doit arriver arrivera -Spike Spigeal"
 
-home_logo = "./content/img/1805806.png"
+home_logo = "https://cdn-icons-png.freepik.com/512/1805/1805806.png?ga=GA1.1.795171737.1713953483"
 
 footer_copyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
