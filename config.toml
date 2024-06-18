@@ -34,13 +34,13 @@ hermit_menu = [
 ]
 
 hermit_social = [
-    { name = "github", link = "https://github.com" },
+    { name = "github", link = "https://github.com/LeCodeEtMoi/MonBlog" },
     { name = "email", link = "mailto:author@domain.com" }
 ]
 
 
 [extra.author]
 name = "LaPetiteLigneDeCode"
-email = "author@domain.com"
+
 
 

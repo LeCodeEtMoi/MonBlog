@@ -32,6 +32,6 @@ Ce blog est herbergé gratuitement grace à Github Page via [Zola](https://www.g
 
 Les articles à ecrire avant de le mettre sur Internet :
 
-- Faire un artciles sur mon projet Book 
+- Faire un article sur mon projet Book 
 - Guide d'instalation Arch Linux fini ;) et + guide d'installation Linux Mint 
-- Finir les guide de base en NSI ansi que la comparaison de LInux/Window/Mac
+- Finir les guides de base en NSI ansi que la comparaison de LInux/Window/Mac
