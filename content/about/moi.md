@@ -6,20 +6,32 @@ draft=false
 
 
 
-D'une mélodie enjouée jouée sur les touches virtuoses de mon piano, je suis LapetitLigneDeLigneDeCouleur, un errant des éthers numériques. Sur le vaisseau Linux de mon esprit, je navigue à travers les vastes océans du cyberespace, à la recherche de partitions libres et d'accords libres. Dans l'écho de chaque note résonne l'appel de la nature, rappelant les vents de liberté qui soufflent à travers les forêts numériques. Avec un sourire taquin et un claquement de doigts, je défie les lois de la gravité informatique et compose des symphonies de code, où chaque ligne est une harmonie et chaque couleur une toile de paysage virtuel.
-Si tu aime la liberté desprit et de création tu es au bonne endroit . Ici on reve et on est la pour soit , pour ce faire plaisir . Quand vous passez ici on pourra dire :
- 
 
-> J'ai vue la beauté du monde que on nous cache à la télé" PvNova .
+Hey moi c'est la PetiteLigneDeCouleur . Je suis un fervent guarde l'open source , qui postera tout sorte d'articles qui auront le même points commun qui est de vous faire découvrir la joie d'internet , du numerique , du monde ! Ici on verra un tout autre monde que les média nous le montre . Mais je suis aussi un joueur d'echec , un Linuxiens ...
+
+> J'ai vue la beauté du monde qu'on nous cache à la télé"  *PvNova*
+
+J'assayerai aussi de qualer des mot de la [SPM (Société Protectrice des Mots)](https://www.virgule-mag.com/pages/listeSPM.pdf?1634905879403) pour apprendre des mots tout en s'amusant .
+
 
 Dans ce blog on decouvra des personnes passionnate , avide de savoir et qui aime partager leur connaissances . On decouvira comment programmez en python , html ,css ,javascripte , bash ...  Mais on decouvrira aussi quelques histoires sur la musique et comment sauvez notre chère planette chèrie :)
 
-C'est le coin des papa qui ne save plus comment on sert du shell ou de la maman qui ne sais pas comment on active le bleutooth . C'est l'endroit du cousin qui veux apprend coment on se fait un site web ou de la seur qui veux apprend comment faire pour calculer un moyen en python. 
+C'est le coin des papa qui ne savent plus comment on sert du shell ou de la maman qui ne sais pas comment on active le bleutooth . C'est l'endroit du cousin qui veux apprend comment on se fait un site web ou de la soeur qui veux apprend comment faire pour calculer une moyenne en python. Bref ici on est la pour apprendre tout en s'amusant .
 
-Les articles a erire avant de le mettre sur Internet :
+
+
+### Info 
+Tout les articles qui parles de NSI suive le programme , et sont des coppier de mes propre cours que j'ai aptés pour mieux illustré et rendre le sujet plus ludique . Je vous met ici [le programme officiels](https://eduscol.education.fr/2068/programmes-et-ressources-en-numerique-et-sciences-informatiques-voie-g) et je vous met aussi [le site web de Frédirc Junier](http://frederic-junier.org/) un prof de Maths , NSI et SNT si vous voulez des exo ou une autre visons de voir les cours de NSI .
+
+
+
+
+Ce travail est mis à disposition selon les termes de la [Licence Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/deed.fr) Merci de respecter la licence :)
+
+Ce blog est herbergé gratuitement grace à Github Page via [Zola](https://www.getzola.org/) . J'utilise le theme [Hermet_Zola](https://www.getzola.org/themes/hermit/) . Merci à eux 
+
+Les articles à ecrire avant de le mettre sur Internet :
 
 - Faire un artciles sur mon projet Book 
-- Guide d'instalation Arch LInux fini ;) et + guide d'installation Linux Mint 
+- Guide d'instalation Arch Linux fini ;) et + guide d'installation Linux Mint 
 - Finir les guide de base en NSI ansi que la comparaison de LInux/Window/Mac
-
-
