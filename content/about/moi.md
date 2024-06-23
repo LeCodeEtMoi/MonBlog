@@ -11,7 +11,7 @@ Hey moi c'est la PetiteLigneDeCouleur . Je suis un fervent guarde l'open source 
 
 > J'ai vue la beauté du monde qu'on nous cache à la télé"  *PvNova*
 
-J'assayerai aussi de qualer des mot de la [SPM (Société Protectrice des Mots)](https://www.virgule-mag.com/pages/listeSPM.pdf?1634905879403) pour apprendre des mots tout en s'amusant .
+J'assayerai aussi de caler des mot de la [SPM (Société Protectrice des Mots)](https://www.virgule-mag.com/pages/listeSPM.pdf?1634905879403) pour apprendre des mots tout en s'amusant .
 
 
 Dans ce blog on decouvra des personnes passionnate , avide de savoir et qui aime partager leur connaissances . On decouvira comment programmez en python , html ,css ,javascripte , bash ...  Mais on decouvrira aussi quelques histoires sur la musique et comment sauvez notre chère planette chèrie :)
@@ -21,7 +21,7 @@ C'est le coin des papa qui ne savent plus comment on sert du shell ou de la mama
 
 
 ### Info 
-Tout les articles qui parles de NSI suive le programme , et sont des coppier de mes propre cours que j'ai aptés pour mieux illustré et rendre le sujet plus ludique . Je vous met ici [le programme officiels](https://eduscol.education.fr/2068/programmes-et-ressources-en-numerique-et-sciences-informatiques-voie-g) et je vous met aussi [le site web de Frédirc Junier](http://frederic-junier.org/) un prof de Maths , NSI et SNT si vous voulez des exo ou une autre visons de voir les cours de NSI .
+Tout les articles qui parles de NSI suive le programme , et sont des coppies de mes propre cours que j'ai adaptés pour mieux illustré et rendre le sujet plus ludique . Je vous met ici [le programme officiels](https://eduscol.education.fr/2068/programmes-et-ressources-en-numerique-et-sciences-informatiques-voie-g) et je vous met aussi [le site web de Frédirc Junier](http://frederic-junier.org/) un prof de Maths , NSI et SNT si vous voulez des exo ou une autre visons de voir les cours de NSI .
 
 
 

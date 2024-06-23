@@ -1,6 +1,6 @@
 # MonBlog
 
-Vous êtes dans le REAMDME de mon blog , si vous voulez faire le meme j'ai fait un article de blog dessus .
+Vous êtes dans le README de mon blog , si vous voulez faire le meme j'ai fait un article de blog dessus .
 
 
 Ce travail est mis à disposition selon les termes de la [Licence Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/deed.fr) Merci de respecter la licence :)
