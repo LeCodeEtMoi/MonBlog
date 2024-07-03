@@ -51,7 +51,8 @@ Deux solution s'offre a vous soit vous fait tout manuellements soit vous execute
 
 ## Solution Scripte 
 
-Une fois la configuration faite , nous allons utiliser la deuxieme clef usb . Pour gagner du temps j'ai réaliser un scripte que je vous invite a télécharger et mettre dans votre clef usb si vous voulez suivre la suite du tutoriels. Mettre ici le lien du scirpte .
+Une fois la configuration faite , nous allons utiliser la deuxieme clef usb . Pour gagner du temps j'ai réaliser un scripte que je vous invite a télécharger et mettre dans votre clef usb <a href="./Arch-Install.zip" download>ICI</a> <a download="Arch-Install.zip">Mdr</a>
+si vous voulez suivre la suite du tutoriels. Mettre ici le lien du scirpte .
 
 
 Pour une simple question de facilité copier coler le scipte dans document puis ouvrer le terminal et executer les commandes suivantent : 
