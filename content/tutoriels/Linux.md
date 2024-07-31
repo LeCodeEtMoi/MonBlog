@@ -30,7 +30,7 @@ Voici une liste des critères à prendre en compte lors de l'analyse d'un systè
 Stabilité
 
    Linux : Connu pour sa stabilité et son uptime élevé, souvent utilisé pour des serveurs où des interruptions minimales sont cruciales.
-        Source : Why Linux Is More Stable Than Other Operating Systems
+        Source : (Why Linux Is More Stable Than Other Operating Systems)[https://www.linuxfoundation.org/]
    Windows : Les versions récentes de Windows (comme Windows 10 et 11) ont amélioré la stabilité, mais peuvent encore rencontrer des problèmes de plantage.
         Source : Windows 10 Stability
    macOS : Très stable grâce à un écosystème matériel et logiciel contrôlé par Apple, minimisant les conflits.
