@@ -19,12 +19,12 @@ Différence entre Git et GitHub : Clarifier que Git est un système de contrôle
 
     Installation de Git : Fournir des instructions pour installer Git sur Windows, macOS et Linux.
     Commandes Git essentielles :
-        git init : Initialiser un nouveau dépôt Git.
-        git clone : Cloner un dépôt existant.
-        git add : Ajouter des fichiers au suivi.
-        git commit : Enregistrer les changements dans l'historique.
-        git push : Envoyer les changements vers GitHub.
-        git pull : Récupérer les dernières modifications depuis GitHub.
+        - git init : Initialiser un nouveau dépôt Git.
+        - git clone : Cloner un dépôt existant.
+        - git add : Ajouter des fichiers au suivi.
+        - git commit : Enregistrer les changements dans l'historique.
+        - git push : Envoyer les changements vers GitHub.
+        - git pull : Récupérer les dernières modifications depuis GitHub.
 
 4. Créer un dépôt sur GitHub
 
