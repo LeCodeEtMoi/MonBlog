@@ -12,8 +12,12 @@ Différence entre Git et GitHub : Clarifier que Git est un système de contrôle
 
 2. Création d'un compte GitHub
 
-    Inscription : Décrire comment créer un compte GitHub.
-    Configuration du profil : Expliquer comment configurer un profil, ajouter une photo de profil, une biographie, et lier des réseaux sociaux.
+    - Allez sur la page pour créé son compte [ici](https://github.com/signup)
+
+    - Entrer votre email , votre mot de passe , puis votre username suiver les étapes quoi ...
+
+    Une fois votre compte créé vous pover modifier votre profil en allant sur la photo profil > Your Profile
+    Ensuite allez sur votre image de profil (le crayon pour editer) et vous pourez ajouter votre bio , localisation , lier des réseaux sociaux ...
 
 3. Les bases de Git
 
