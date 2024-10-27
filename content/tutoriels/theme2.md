@@ -1,5 +1,5 @@
 +++
-title="Theme 2"
+title="Theme 2 : L'algebre de Bool"
 date=2024-01-06
 draft=false
 +++

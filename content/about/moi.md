@@ -7,11 +7,11 @@ draft=false
 
 
 
-Hey moi c'est la PetiteLigneDeCouleur . Je suis un fervent guarde l'open source , qui postera tout sorte d'articles qui auront le même points commun qui est de vous faire découvrir la joie d'internet , du numerique , du monde ! Ici on verra un tout autre monde que les média nous le montre . Mais je suis aussi un joueur d'echec , un Linuxiens ...
+Hey moi c'est la PetiteLigneDeCouleur . Je suis un fervent guarde de l'open source , qui postera tout sorte d'articles qui auront le même points commun qui est de vous faire découvrir la joie d'internet , du numerique , du monde ! Ici on verra un tout autre monde que les média nous le montre . Mais je suis aussi un joueur d'echec , un Linuxiens ...
 
 > J'ai vue la beauté du monde qu'on nous cache à la télé"  *PvNova*
 
-J'assayerai aussi de caler des mot de la [SPM (Société Protectrice des Mots)](https://www.virgule-mag.com/pages/listeSPM.pdf?1634905879403) pour apprendre des mots tout en s'amusant .
+J'assayerai aussi de caler des mots de la [SPM (Société Protectrice des Mots)](https://www.virgule-mag.com/pages/listeSPM.pdf?1634905879403) pour apprendre des mots tout en s'amusant .
 
 
 Dans ce blog on decouvra des personnes passionnate , avide de savoir et qui aime partager leur connaissances . On decouvira comment programmez en python , html ,css ,javascripte , bash ...  Mais on decouvrira aussi quelques histoires sur la musique et comment sauvez notre chère planette chèrie :)
@@ -30,8 +30,3 @@ Ce travail est mis à disposition selon les termes de la [Licence Creative Commo
 
 Ce blog est herbergé gratuitement grace à Github Page via [Zola](https://www.getzola.org/) . J'utilise le theme [Hermet_Zola](https://www.getzola.org/themes/hermit/) . Merci à eux 
 
-Les articles à ecrire avant de le mettre sur Internet :
-
-- Faire un article sur mon projet Book 
-- Guide d'instalation Arch Linux fini ;) et + guide d'installation Linux Mint 
-- Finir les guides de base en NSI ansi que la comparaison de LInux/Window/Mac
