@@ -7,44 +7,57 @@ draft=false
 
 Les outils cools sur le web :
 
-# Les outils de la platforme chapril , pour + d'info : https://www.chapril.org/  : 
+# [Chapril](https://www.chapril.org/)  : 
 
 
-Envoyer des documents < 1Mo : https://drop.chapril.org/
+[Envoyer des documents < 1Mo](https://drop.chapril.org/)
 
-Une petite visio : https://visio.chapril.org/
+[Une petite visio](https://visio.chapril.org/)
 
-Organisez un evenement : https://mobilizon.chapril.org/
+[Organisez un evenement](https://mobilizon.chapril.org/)
 
-Generer un QR code  :https://qrcode.chapril.org/
+[Generer un QR code](https://qrcode.chapril.org/)
 
-Faire du benevolat : https://benevalibre.chapril.org/
+[Faire du benevolat](https://benevalibre.chapril.org/)
 
-Etablire des evenement : https://date.chapril.org/
+[Etablire des evenement](https://date.chapril.org/)
 
-Blocnote : https://pad.chapril.org/
+[Blocnote](https://pad.chapril.org/)
 
-Social Network : https://pouet.chapril.org/explore
+[Social Network](https://pouet.chapril.org/explore)
 
-Texte à plusieur : https://paste.chapril.org/
+[Texte à plusieur](https://paste.chapril.org/)
 
-Discuter : https://www.chapril.org/XMPP.html
+[Discuter](https://www.chapril.org/XMPP.html)
 
-Converrence audio : https://www.chapril.org/Mumble.html
+[Converrence audio](https://www.chapril.org/Mumble.html)
 
+# [Framasoft](https://framasoft.org/fr/) et [du collectif CHATONS](https://entraide.chatons.org/fr/) :
 
-https://framasoft.org/fr/
+[Planifiez vos réunions ou prenez des décisions](https://framadate.org/abc/fr/)
 
-# Les outils du collectif CHATONS pour + d'info : https://entraide.chatons.org/fr/
+[Concevez vos enquêtes en ligne facilement tout en respectant votre public](https://framaforms.org/abc/fr/)
 
-Zourit.net
+[Trouvez, créez et organisez vos événements. Animez vos groupes.](https://mobilizon.fr/)
 
-Prise de rdv : https://bastet.parinux.org
+[Rédigez vos textes en ligne et à plusieurs](https://framapad.org/abc/fr/)
 
-https://www.ti-nuage.fr
+[Un moteur de recherche de vidéos, chaînes et listes de lecture PeerTube](https://sepiasearch.org/)
 
+[Peertube est un outil de partage de vidéos](https://peertube.fr/videos/trending)
 
+[Des formulaires éthiques avec LiberaForms](https://beta.framaforms.org/)
 
-# Gitea
+[Hébergeur associatif, transparent, éthique, militant et solidaire.](https://www.ti-nuage.fr)
 
-# Peertube
+[Instance officielle de CryptPad, suite collaborative chiffrée de bout en bout et open-source. Administrée par l'équipe de développement](https://cryptpad.fr/)
+
+# Service independant
+
+[Gitea, plateforme DevOps privée, rapide et fiable](https://about.gitea.com/)
+
+[Mastodon, Un réseau social décentralisé, basé sur l'open source, offrant une alternative à Twitter](https://mastodon.social/explore)
+
+[Zotero , un outil gratuit et facile à utiliser pour vous aider. collecter, organiser, annoter, citer et partager la recherche.](https://www.zotero.org/)
+
+[Funkwhale, est un serveur de flux continu de musique libre, auto-hébergé et fédéré via le protocole ActivityPub au sein du Fediverse](https://www.funkwhale.audio/)
