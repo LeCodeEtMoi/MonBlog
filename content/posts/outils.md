@@ -61,3 +61,8 @@ Les outils cools sur le web :
 [Zotero , un outil gratuit et facile à utiliser pour vous aider. collecter, organiser, annoter, citer et partager la recherche.](https://www.zotero.org/)
 
 [Funkwhale, est un serveur de flux continu de musique libre, auto-hébergé et fédéré via le protocole ActivityPub au sein du Fediverse](https://www.funkwhale.audio/)
+
+
+# Les blog sympa : 
+
+[La Cascade](https://la-cascade.io/) : Un peu de tout sur CSS, HTML, SVG et JS,traduit du web anglophone
