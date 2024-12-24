@@ -24,7 +24,7 @@ C'est le coin des papa qui ne savent plus comment on sert du shell ou de la mama
 Tout les articles qui parles de NSI suive le programme , et sont des coppies de mes propre cours que j'ai adaptés pour mieux illustré et rendre le sujet plus ludique . Je vous met ici [le programme officiels](https://eduscol.education.fr/2068/programmes-et-ressources-en-numerique-et-sciences-informatiques-voie-g) et je vous met aussi [le site web de Frédirc Junier](http://frederic-junier.org/) un prof de Maths , NSI et SNT si vous voulez des exo ou une autre visons de voir les cours de NSI .
 
 
-
+Les articles peuvent être modifiés à tout moment pour des raisons de correction et d'amélioration.
 
 Ce travail est mis à disposition selon les termes de la [Licence Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/deed.fr) Merci de respecter la licence :)
 
