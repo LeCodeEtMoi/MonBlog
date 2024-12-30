@@ -177,7 +177,7 @@ Si Do 4 est à 440 Hz, voici les fréquences des 12 notes successives :
 
    Chaque note est donc obtenue par multiplication successivement de la fréquence précédente par 1.05946 .
 
-Ce nombre, 1.05946, est souvent appelé le rapport d'intervalle de demi-ton dans le système tempéré égal ou tout simplement le facteur de multiplication pour un demi-ton. 
+Ce nombre, 1.05946, est souvent appelé **le rapport d'intervalle de demi-ton dans le système tempéré égal** ou tout simplement **le facteur de multiplication pour un demi-ton**. 
 
 Le 2^{1/12} est utilisé parce qu'une octave complète, qui est l'intervalle entre une note et celle qui double sa fréquence, correspond à un rapport de fréquence de 2:1. Diviser cette octave en 12 intervalles égaux implique de trouver quel facteur constant de fréquence, lorsque multiplié par lui-même 12 fois, donne 2 (le rapport de fréquence d'une octave). C'est exactement ce que fait 2^{1/12}, qui est environ 1.05946.
 
