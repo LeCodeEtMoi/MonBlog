@@ -156,10 +156,6 @@ Différence entre Git et GitHub : Clarifier que Git est un système de contrôle
 
     ### Commentaires et révisions des Pull Requests
 
-    Fork, Pull Requests, et Issues :
-        Fork : Expliquer ce qu'est un fork et comment en créer un.
-        Pull Request (PR) : Comment proposer des changements à un projet.
-        Issues : Comment signaler des bugs ou demander des fonctionnalités.
     Commentaires et Révisions : Comment commenter et réviser les pull requests.
 
 6. Utilisation avancée de GitHub

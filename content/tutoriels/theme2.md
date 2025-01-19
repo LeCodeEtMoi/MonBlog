@@ -1,25 +1,10 @@
 +++
-title="Theme 2 : L'algebre de Bool"
+title="Theme 2 : L'algebre de Boole"
 date=2024-01-06
 draft=false
 +++
 
-<style>
-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-      }
 
-th, td {
-        border: 1px solid #dddddd;
-        text-align: center;
-        padding: 8px;
-        }
-
-th {
-    background-color: #f2f2f2;
-</style>
 # <u>I Origine</u><br>
 
 L'algebre de Bool est du au logicien mathematicien et philosophe britanique George Bool (1815-1864) En 1847 , puis 1854 , ce scientifique publie les bases de ce qu'on appelle aujourd'hui l'alegbre de Boole . Son interet dst de tarduire des idées en concepts en équation , leur appliquer certaines lois et retraduire le résulatat en terme logiques , n'acceptant pas que des valeur numerique : 0 et 1 (Faux ou Vrais) . L'importance de son travail est dans de nombreux travail est dans de nombreux domaines ( théorie des probabilités, circuits téléphonique , hdroliques ..) Dont l'informatique .
@@ -62,7 +47,7 @@ L'algebre de Bool est du au logicien mathematicien et philosophe britanique Geor
                 <td>inférieur ou égal</td>
             </tr>
             <tr>
-                <td>"&gt;"</td>
+                <td>&gt;</td>
                 <td>strictement supérieur</td>
             </tr>
             <tr>

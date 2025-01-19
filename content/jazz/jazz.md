@@ -15,7 +15,6 @@ L'évolution du jazz s'est poursuivie dans les années 1940 avec l'avènement du
 
 Les années suivantes ont vu l'émergence de divers styles, dont le cool jazz, le hard bop, le modal jazz et le free jazz. Des artistes novateurs tels que Miles Davis et John Coltrane ont marqué cette période de manière indélébile.
 
-Le jazz a continué à évoluer au fil des décennies, influençant d'autres genres musicaux et conservant sa réputation d'expression artistique spontanée et innovante. Ainsi, Maître, l'histoire du jazz est une saga passionnante qui a laissé une empreinte indélébile sur le paysage musical mondial. Si vous avez des questions plus précises ou si vous souhaitez explorer des anecdotes spécifiques, n'hésitez pas à me guider dans la direction qui vous intéresse.
-
+Le jazz a continué à évoluer au fil des décennies, influençant d'autres genres musicaux et conservant sa réputation d'expression artistique spontanée et innovante.
 
 
