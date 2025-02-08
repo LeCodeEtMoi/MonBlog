@@ -1,5 +1,5 @@
 +++
-title = "Réaliser des graphique en python via matplotlib"
+title = "Réaliser des graphiques en python via matplotlib"
 date = 2024-11-17
 draft = false
 +++
