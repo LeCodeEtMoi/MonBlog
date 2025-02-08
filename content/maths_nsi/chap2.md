@@ -244,3 +244,4 @@ Le point A (a;f(a)) est un point d'inflexion pour f si et seulement si f''(x) s'
 
 
 
+z
