@@ -1,5 +1,5 @@
 +++
-title="Theme 1 Architecture des ordinateurs : modèle de von Neumann"
+title="NSI : Theme 1 Architecture des ordinateurs : modèle de von Neumann"
 date=2024-01-06
 draft=false
 +++

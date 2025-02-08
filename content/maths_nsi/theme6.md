@@ -1,5 +1,5 @@
 +++
-title="Theme 6 : Representation d'un texte en machine"
+title="NSI : Theme 6 : Representation d'un texte en machine"
 date=2024-01-06
 draft=false
 +++

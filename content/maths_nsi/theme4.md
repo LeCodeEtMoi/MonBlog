@@ -1,5 +1,5 @@
 +++
-title="Theme 4 : Codage des nombres entiers naturels"
+title="NSI : Theme 4 : Codage des nombres entiers naturels"
 date=2024-01-06
 draft=false
 +++

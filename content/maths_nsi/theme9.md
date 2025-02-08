@@ -1,5 +1,5 @@
 +++
-title="Thème 9 : Rechereche dichotomique "
+title="NSI : Thème 9 : Rechereche dichotomique "
 date=2024-01-06
 draft=false
 +++

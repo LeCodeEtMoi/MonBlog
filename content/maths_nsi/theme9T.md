@@ -1,5 +1,5 @@
 +++
-title = "Theme 9 Systeme de gestion de Base de Donnée Terminale"
+title = "NSI: Theme 9 Systeme de gestion de Base de Donnée Terminale"
 date = 2025-01-19
 draft = false
 +++

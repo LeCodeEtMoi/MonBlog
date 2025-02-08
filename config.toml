@@ -29,6 +29,7 @@ footer_copyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/
 hermit_menu = [
     { link = "/posts", name = "Posts" },
     { link = "/tutoriels", name = "Tutoriels" },
+    { link = "/maths_nsi", name = "Maths NSI" },
     { link = "/jazz", name = "Musique et compréhension" },
     { link = "/about", name = "About" },
 ]

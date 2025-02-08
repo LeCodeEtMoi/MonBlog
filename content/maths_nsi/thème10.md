@@ -1,5 +1,5 @@
 +++
-title="Thème 10 : Système d'exploitation "
+title="NSI : Thème 10 : Système d'exploitation "
 date=2024-01-06
 draft=false
 +++

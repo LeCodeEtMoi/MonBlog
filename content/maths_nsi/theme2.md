@@ -1,5 +1,5 @@
 +++
-title="Theme 2 : L'algebre de Boole"
+title="NSI : Theme 2 : L'algebre de Boole"
 date=2024-01-06
 draft=false
 +++
