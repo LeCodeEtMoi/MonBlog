@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta itemprop="name" content="Le Blog du Pingouin" />
+  <meta itemprop="description" content="My blog" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://LeCodeEtMoi.github.io/MonBlog/apple-touch-icon.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="https://LeCodeEtMoi.github.io/MonBlog/favicon-32x32.png" />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="https://LeCodeEtMoi.github.io/MonBlog/favicon-16x16.png"
+  />
+  <link
+    rel="shortcut icon"
+    href="https://LeCodeEtMoi.github.io/MonBlog/favicon.ico"
+  />
+  <link rel="stylesheet" href="https://LeCodeEtMoi.github.io/MonBlog/style.css"/>
+  
+  <title>NSI : Theme 2 : L&#x27;algebre de Boole</title>
+  
+
+  
+
+
+  </style>
+  <body id="page">
+
+	
+<header id="site-header" class="animated slideInUp faster">
+  <div class="hdr-wrapper section-inner">
+    <div class="hdr-left">
+      <div class="site-branding">
+        <a href="https:&#x2F;&#x2F;LeCodeEtMoi.github.io&#x2F;MonBlog&#x2F;">Le Blog du Pingouin</a>
+      </div>
+      <nav class="site-nav hide-in-mobile">
+            
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//posts">Posts</a>
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//tutoriels">Tutoriels</a>
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//maths_nsi">Maths NSI</a>
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//jazz">Musique et compréhension</a>
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//about">About</a>
+        
+      </nav>
+    </div>
+    <div class="hdr-right hdr-icons">
+      <span class="hdr-social hide-in-mobile">
+        
+
+<a href="https:&#x2F;&#x2F;github.com&#x2F;LeCodeEtMoi&#x2F;MonBlog" target="_blank" rel="noopener me"
+   title="github">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+  
+</a>
+
+<a href="mailto:author@domain.com" target="_blank" rel="noopener me"
+   title="email">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+  
+</a>
+
+
+      </span>
+      <button id="menu-btn" class="hdr-btn" title="Menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-menu"
+        >
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div id="mobile-menu" class="animated fast">
+  <ul>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//posts">Posts</a></li>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//tutoriels">Tutoriels</a></li>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//maths_nsi">Maths NSI</a></li>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//jazz">Musique et compréhension</a></li>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//about">About</a></li>
+    
+  </ul>
+</div>
+
+	
+	
+
+		
+<main class="site-main section-inner animated fadeIn faster">
+  <article class="thin">
+	<header class="post-header">
+	  <div class="post-meta">
+		
+		<span>Jan 06, 2024</span>
+		<small> - 
+<span class="reading-time" title="Estimated read time">
+  
+  3 min read
+  
+</span>
+</small>
+		
+            
+	  </div>
+	  <h1>NSI : Theme 2 : L&#x27;algebre de Boole</h1>
+	</header>
+
+	<div class="content">
+        
+	  <h1 id="i-origine"><u>I Origine</u><br></h1>
+<p>L'algebre de Bool est du au logicien mathematicien et philosophe britanique George Bool (1815-1864) En 1847 , puis 1854 , ce scientifique publie les bases de ce qu'on appelle aujourd'hui l'alegbre de Boole . Son interet dst de tarduire des idées en concepts en équation , leur appliquer certaines lois et retraduire le résulatat en terme logiques , n'acceptant pas que des valeur numerique : 0 et 1 (Faux ou Vrais) . L'importance de son travail est dans de nombreux travail est dans de nombreux domaines ( théorie des probabilités, circuits téléphonique , hdroliques ..) Dont l'informatique .</p>
+<h1 id="ii-definition"><u>II Définition</u><br></h1>
+<p><b>Un booleen est un type de variable a 2 étape : Vrais (True)(1) et Faux (False)(0)</b></p>
+<p>Un booléen peut être le résultat d'un comparaison , il s'agit alors d'un test. Si le test est valide , le résultat est alors Vrai ( True sous Python). Dans le cas contraire , le résulat est Faux . (False sous Python)<br></p>
+<p><u>Exemple</u></p>
+<p>N = 13 
+print(N &gt; 12)
+L'interpreteur affiche <b>True</b></p>
+<p>N = 13 
+print(N &lt; 12)
+L'interpreteur affiche <b>False</b></p>
+<p>Les operateurs de comparaisons que nous utiliserons sont : </p>
+<title>Opérateurs</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Opérateur</th>
+                <th>Signification</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;</td>
+                <td>strictement inférieur</td>
+            </tr>
+            <tr>
+                <td>&lt;=</td>
+                <td>inférieur ou égal</td>
+            </tr>
+            <tr>
+                <td>&gt;</td>
+                <td>strictement supérieur</td>
+            </tr>
+            <tr>
+                <td>=></td>
+                <td>supérieur ou égal</td>
+            </tr>
+            <tr>
+                <td>==</td>
+                <td>égal</td>
+            </tr>
+            <tr>
+                <td>!=</td>
+                <td>différent</td>
+            </tr>
+        </tbody>
+    </table>
+<h1 id="iii-operateur-et-tables-de-verites"><u>III Operateur et tables de vérités</u><br></h1>
+<p>Operateur &quot;et&quot; : L'operateur &quot;and&quot; permet de tester si deux booleens sont vrais : &quot;a and b &quot; a pour résultat True si et seulement si o est vrais et b est vrai. Sa table de vérité est la suivante : </p>
+<table>
+        <thead>
+            <tr>
+                <th>a</th>
+                <th>b</th>
+                <th>a and b</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
+<h2 id="remarques"><u>Remarques</u> :</h2>
+<ul>
+<li>matématiquement le résultat est donné par intersaction </li>
+<li>cette operation booléenne est appelée &quot;conjonction&quot;</li>
+</ul>
+<p>Exemple : La variable booléenne AmpouleOK représente le fait qu'une ampoule est en état de fonctionnement , la variable booléenne InterrupeteurOn est vrais si l'interupteur  controlant cette ampoule est en position &quot;on&quot; La varialble booléene LUmièreAllumée represente le fait que la lumière est allumée.</p>
+<p>Alors : LumièreAllumée = AmpouleOk and InterupteurON</p>
+<p>Operateur &quot;ou&quot; : L'operateur &quot;or&quot; permet de tester si l'un des deux booléens est au moins vrai : &quot;a or b&quot; a pour résultat True et si seulement si au moins un des deux booléens a ou b est vrai . Sa table de vérité est la suivante : </p>
+<table>
+        <thead>
+            <tr>
+                <th>a</th>
+                <th>b</th>
+                <th>a or b</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
+<h2 id="remarques-1"><u>Remarques</u> :</h2>
+<ul>
+<li>Cette operation booléenne est appelée &quot;disjonction&quot;</li>
+</ul>
+<p>Exemple : La variable booléenne AmpoleHS represente le fait qu'une ampoule n'est pas en état de fonctionnement , la variable booléenne InterupteurOff est vrais si l'interupteur controlant est en position &quot;off&quot; La variable booléenne LumièreEteinte represente le fait que la lumière est éteinte .</p>
+<p>Alors Lumière Eteinte = InterupteurOff or AmpouleHS</p>
+<p>Operateur &quot;non&quot; : L'operateur &quot;not&quot; retourne le booléen opposé . Sa talbe de vérité est la suivante </p>
+<table>
+        <thead>
+            <tr>
+                <th>a</th>
+                <th>not a</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+<h2 id="remarques-2"><u>Remarques</u> :</h2>
+<ul>
+<li>cette operateur boooléenne est appelée &quot;négation&quot;</li>
+</ul>
+<p><u>Exemples</u> : </p>
+<p>La variable booléenne EauSolide represente le fait que l'eau est sous forme de glace , la variable TemperaturePositive est vrai si la temprature de l'eau est positive .</p>
+<p>Alors : Temperature Positive : not EauSolide 
+Eau Solide  : not TemperaturePositive</p>
+<p>Operateur &quot;ou exclusif&quot; l'operateur &quot;xor&quot; permet de tester si et seulement l'un des deux booléens est vrai : &quot;a xor b &quot; a pour résultat True si et seulement l'un des deux des booléens est vrai: &quot;a xor b&quot; a pour résultat True si et seulement si un des des booléens a ou b est vrais et l'autre faux . Sa table de vérité la suivante : </p>
+<table>
+        <thead>
+            <tr>
+                <th>a</th>
+                <th>b</th>
+                <th>a xor b</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+</table><br>
+<p><u>Exemples</u> :</p>
+<p>Deux interupteur va et viens controle la lumière d'un pice , pour qu'elle soit alumée . La variable booléenne VaEtViens1_ON represente le fait que l'interupteur va et vient n°1 est en position &quot;on&quot;.La variable booléenne VaEtVient2_ON represente le fait que l'interupteur va et viens n°2 est en position &quot;on&quot; EtatLumière est vraie si la lumière est alumée</p>
+<p>Alors : ÉtatLumière = VaEtVient1 xor VaEtVient2 </p>
+
+	</div>
+	<hr class="post-end">
+	<footer class="post-info">
+    
+    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>878 Words</p>
+    
+    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2024-01-06</p>
+    
+	</footer>
+  </article>
+    
+  
+  <div class="post-nav thin">
+	
+	
+  </div>
+
+  
+</main>
+
+	  </div>
+	  
+	  
+
+
+
+<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+  <p>&copy; 2025 <a href="https:&#x2F;&#x2F;LeCodeEtMoi.github.io&#x2F;MonBlog&#x2F;">LaPetiteLigneDeCode</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+  <p>Made with <a href="https://www.getzola.org" target="_blank" rel="noopener">Zola</a> &#183; Theme <a href="https://github.com/VersBinarii/hermit_zola" target="_blank" rel="noopener">Hermit_Zola</a>
+	
+  </p>
+</footer>
+
+
+
+
+	</div>
+	
+	<script src="https://LeCodeEtMoi.github.io/MonBlog/js/main.js"></script>
+
+	<!-- Math rendering -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body, { delimiters: [ {left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}, {left: '\\[', right: '\\]', display: true}, {left: '\\(', right: '\\)', display: false}]});"></script>
+
+    
+
+	
+	<script src="https://LeCodeEtMoi.github.io/MonBlog/js/copy.js"></script>
+	
+	<script src="https://LeCodeEtMoi.github.io/MonBlog/js/main.js"></script>
+
+    
+    
+
+	
+  </body>
+</html>
