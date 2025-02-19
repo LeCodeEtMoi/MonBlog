@@ -83,8 +83,6 @@ umount -a # Il risque d'avoir des erreurs mais rien de grave
  cryptsetup luksOpen /dev/nvme0n1p2 toto # toto fais refference à la 3eme commande lorsqu'on dechiffrer le disque
 ```
 
-yo
-
 
 
 
