@@ -56,5 +56,4 @@ Et voilà, Node.js est installé. Il suffit de vérifier que tout a bien fonctio
 node -v
 nmp -v
 ```
-
-Cool
+Yep
