@@ -1,37 +1,65 @@
 +++
-title= "Faire un blog avec Zola ( Niveaux Intermediare )"
-date=2024-01-06
-draft=false
+title = "Faire un blog avec Zola (Niveau Intermédiaire)"
+date = 2024-01-06
+draft = false
 +++
 
+# Réaliser un blog
 
-# Réaliser un blog 
+Vous avez peut-être envie de partager vos connaissances ou bien de vous exprimer sur des sujets d'actualité... Vous voulez donc votre endroit à vous (donc personnalisé) pour pouvoir partager tout ce que vous voulez sur internet. Vous avez les réseaux sociaux, mais cela n'est pas assez personnalisable. Je vous propose donc de faire un blog. Il y a bien des sites qui permettent de maintenir un blog, mais cela reste peu personnalisable.
 
-Vous avez peut être envie de partagé vos connaissances ou bien de vous exprimé sur des sujet d'actualité ... Vous voulez donc votre endroit à vous ( donc personalisé ) pour pouvoir partager tout ce que vous voulez sur internet . Vous avez les reéseau mais ceci n'est pas assez personalisable . Je vous propose donc de faire un blog . Il y a un bien site qui permet de maintenire un blog mais cela reste pas très personalisable . 
+Je vous propose donc de vous accompagner de A à Z sur la création d'un blog. Pour cela, il vous faudra un ordinateur et rien d'autre.
 
-Je vous propose donc de vous acompagnée de A à Z sur la création d'un blog . Pour cela il vous faudra un ordinateur et rien d'autre . Nous allons faire un site static c'est a dire que l'utilisateur ne peux pas avoir espace que que lui peux voir .
+Nous allons nous diriger vers des générateurs de sites statiques. Nous avons donc le choix entre Hugo et Zola. Nous allons nous intéresser dans ce tutoriel à Zola. Nous avons donc deux choix qui s'offrent à nous : soit nous construisons nous-mêmes notre thème, soit nous personnalisons un thème déjà créé. Nous allons partir sur la personnalisation d'un thème, car nous ne voulons pas trop nous casser la tête :) . Voyez, ce blog utilise le thème Hermit_Zola, mais il diffère de la démo. Je l'ai adapté à mes propres besoins. Je vous laisse donc choisir parmi tous les thèmes qu'il propose.
 
-Nous allons nous diriger vers des générateur de site statique nous avons donc le choix Hugo et Zola .... Nous nous allons nous interresser sur ce tutoriels à Zola . Nous avons donc 2 choix qui s'offre à nous . Soit on construit nous meme notre theme soit on personalise un theme déja créé . Nous allons partie sur la personalisation d'un thème on veux pas trop ce casser la tête :) . Voyez vous ce blog utilise le theme Hermit_Zola mais il different de cela de la démo je l'ai adapté à mes propre besoin . Je vous laisse donc choisir parmis tout les thme qu'il propose .
+## Faire tourner le blog en local
+
+Une fois le thème choisi, nous allons faire tourner notre blog en local (cela veut dire qu'il tourne sur notre PC, vous pouvez le voir car vous avez une adresse un peu particulière). Pour cela, nous allons tout d'abord créer un projet Zola avec la commande suivante dans votre terminal :
+
+```sh
+zola init le_nom_de_votre_blog
+```
+
+Vous allez ensuite avoir une série de questions auxquelles je vous conseille de répondre "oui".
+
+Entrez dans le bon répertoire, puis nous allons lancer le serveur :
+
+```sh
+zola serve
+```
+
+Dans votre terminal, une URL devrait vous être donnée. Cliquez dessus et voilà, vous avez votre projet qui fonctionne.
 
 
-# 
- Une fois choisi, nous allons donc faire tourné notre blog en local ( sa ve dire qu'il tourne sur notre pc , vous pouvez le voire car vous avez que adresse un peu particulière ) pour cela on allons tout d'abords tout d'abors créé un projet zola avec la commade dans votre terminal
-``` zola init le_nom_de_votre_blog ```
-Vous allez avoir ensuite une serie de question ou je vous conseills de repondre tout par oui .
+# Installer le thème
 
-Entrer dans le bon repertoire , puis nous allons lancer le server ``` zola serve```
+Il faut à présent mettre votre thème. Dans le dossier ```themes``` de votre blog, dans le terminal, récupérez le lien qui redirige vers le dépôt GitHub, puis écrivez la commande :
 
-Dans votre terminale on est censé vous donner une url cliqué dessus et voilà vous avez projet qui fonctionne 
+```sh
+git clone le_nom_du_dépôt
+```
 
-# Le theme 
+Installez Git si nécessaire.
 
-Il faut a présent mettre votre theme . Alors dans le dossier theme de votre blog dans le terminal . Recupere le lien qui redirige vers le dépot github puis ecriver la commade ``` git clone le nom_du_dépot ``` installé git si néssaire .
+Rafraîchissez la page et vous verrez le site comme dans la page de démo. Je vous laisse la documentation de votre projet pour l'adapter au mieux à vos envies. Tous vos articles s'écrivent sous forme Markdown, c'est de l'HTML simplifié (je le dis car vous pouvez mettre de l'HTML dans des fichiers Markdown
 
-Rafrechiser la page et vous verez le site comme dans la page de démo . Je vous laisse la doc de votre projet pour l'adapter au mieux a vos envie . Tout vos articles vous s'ecrire sous le forme markdown c'est de l'HTML en s'implifier ( je le dit car vous pouvez mettre du l'html dans des fichiers markdown)
+# Mettre en ligne votre site web
 
-# Rendre en ligne votre site web 
+Pour mettre en ligne notre blog gratuitement, nous allons utiliser GitHub Pages. Tout d'abord, créez un compte ou connectez-vous. Vous allez créer un nouveau dépôt, puis le cloner avec :
 
-Pour mettre en ligne notre blog gratuitement nous allons utiliser la solution suivant qui github page . Alors tout d'abors créé vous un compte ou connectez vous . Vous allez créé un nouveaux dépot puis vous allez le cloner avec ``` git clone le nom_de_votre_dépot ``` ajouter tout les dossiers a votre dossier clone ensuite allez dans votre terminal dans votre dossier cloner et effectuez les commande suivante ``` git add .``` ``` git commit votre_message ``` puis ``` git push origin main ``` . Alors dans votre depot et rafraichiser la page . Normalement tout vos documents devrait être dans votre dépots . Puis nous devons créé un workflow nous allons new worflow et collez ceci 
+```sh 
+git clone le_nom_de_votre_dépôt
+```
+
+Ajoutez tous les dossiers à votre dossier cloné, puis allez dans votre terminal dans votre dossier cloné et effectuez les commandes suivantes :
+
+```sh
+git add .
+git commit -m "votre_message"
+git push origin main
+```
+
+Ensuite, dans votre dépôt, rafraîchissez la page. Normalement, tous vos documents devraient être dans votre dépôt. Nous devons maintenant créer un workflow. Allez dans Actions et créez un nouveau workflow avec le contenu suivant :
 
 ``` 
 on: push
@@ -54,11 +82,21 @@ jobs:
           #TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-Vous allez créé un token et le mettre dans votre projet . Puis ``` git pull origin main ``` pour mettre le workflow dans notre projet effectuez les commandes suivante ``` git add .``` ``` git commit votre_message ``` puis ``` git push origin main ``` .
+Créez un token et mettez-le dans votre projet. Puis, faites un git pull origin main pour mettre le workflow dans votre projet et effectuez les commandes suivantes :
 
-Il faut ensuite allez dans github page et mettre la branche gh-pages attendez un peu et cliquer sur le lien . 
-#### ATTENTION : Verifier bien que votre le lien de votre url dans votre fichier config.toml corespont à l'url de github . 
+```sh
+git add .
+git commit -m "votre_message"
+git push origin main
+```
 
-Si vous avez des problèmes pour faire fonctionner fotre blog sur github prennez exemple sur mon dépot git .
+Ensuite, allez dans les paramètres de GitHub Pages et mettez la branche ```gh-pages```. Attendez un peu et cliquez sur le lien.
+
+**ATTENTION : Vérifiez bien que l'URL de votre site dans votre fichier config.toml correspond à l'URL de GitHub.**
+
+Si vous avez des problèmes pour faire fonctionner votre blog sur GitHub, prenez exemple sur mon dépôt Git.
+
+
+
 
 
