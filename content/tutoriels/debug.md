@@ -8,6 +8,8 @@ Si vous avez suivie cette config cette article peux vous être utiles [Installer
 
 ## Étape 1 : Allez sur en AndavoursOs
 
+- Booter la clef usb sur AndavoursOs
+
 Voir tuto : [Mettre Endearvours sur sa clef](/tutoriels/endearvours/) 
 
 ## Étape 2 : Le shell
@@ -24,19 +26,21 @@ setxkbmap fr
 sudo su
 ```
 
-- Dechiffrer le premier disque
+- Dechiffrer la premier partition du disque
+
+Dans la partition LUKS tu as un containeur LVM qui contient 2 volumes dont un qui s'appelle Arch-root. Il faut pas que {nom} choisi qui va être mappé dans /dev/mapper soit le même
 
 ```shell
-cryptsetup luksOpen /dev/nvme0n1p2 toto # Mettre autre chose que Arch-root car il peut rentrer en conflit avec le dossier Arch-root 
+cryptsetup luksOpen /dev/nvme0n1p2 toto # Mettre autre chose que Arch-root
 ```
 
-- Monter le 1ere disque 
+- Monter la 1ere partition disque 
 
 ```shell
-mount /dev/mapper/Arch-root /mount
+mount /dev/mapper/Arch-root /mnt
 ```
 
-- Monter le 2eme disque 
+- Monter la 2eme partition disque 
 
 ```shell
 mount /dev/mapper/nvme0n1p1 /mount/boot
@@ -45,10 +49,10 @@ mount /dev/mapper/nvme0n1p1 /mount/boot
 - Si vous êtes pas bon endroit on se met à la racine ( fait le si vous en savez rien :) )
 
 ```shell
-cd ~
+cd /
 ```
 
-- On change la racine du système de fichiers (chroot) vers le répertoire /mnt
+- On bascule sur la racine du disque du PC pour se retrouver dans l'environnement du PC à réparer.
 
 ```shell
 arch-chroot /mnt
@@ -63,7 +67,7 @@ pacman -Suy
 - Il se peut qu'il faut downdgrade un paquet , s'il le faut
 
 ```shell
-downgrade example-pkg-1.0.0-1-x86_64.pkg.tar.xz
+downgrade <paquet>
 ```
 
 - On sort 
@@ -71,16 +75,16 @@ downgrade example-pkg-1.0.0-1-x86_64.pkg.tar.xz
 ```shell
 exit
 ```
-- On demonte les disques  
+- On demonte les partitions , c'est bien de vérifier que les partitions qui n'ont pas été démontées correspondent à celles de l'environnement live seulement et pas du disque du PC
 
 ```shell
 umount -a # Il risque d'avoir des erreurs mais rien de grave
 ```
 
-- On chiffre le disque 
+- On ferme la partition LUKS.
 
 ```shell
- cryptsetup luksOpen /dev/nvme0n1p2 toto # toto fais refference à la 3eme commande lorsqu'on dechiffrer le disque
+ cryptsetup luksOpen toto # toto fais refference à la 3eme commande lorsqu'on dechiffrer le disque
 ```
 
 

@@ -14,7 +14,7 @@ def echange(T,i,j):
 ```
 
 ```python
-def Tri_par_selcetion(T):
+def Tri_par_selection(T):
     for i in range(len(T)-1):
         min_index = i
         for j in range(i+1,len(T)):
