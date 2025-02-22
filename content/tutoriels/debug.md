@@ -16,13 +16,13 @@ Voir tuto : [Mettre Endearvours sur sa clef](/tutoriels/endearvours/)
 
 - Mettre le pc en azerty
 
-```shell
+```sh
 setxkbmap fr
 ```
 
 - Se mettre en root
 
-```shell
+```sh
 sudo su
 ```
 
@@ -30,60 +30,60 @@ sudo su
 
 Dans la partition LUKS tu as un containeur LVM qui contient 2 volumes dont un qui s'appelle Arch-root. Il faut pas que {nom} choisi qui va être mappé dans /dev/mapper soit le même
 
-```shell
+```sh
 cryptsetup luksOpen /dev/nvme0n1p2 toto # Mettre autre chose que Arch-root
 ```
 
 - Monter la 1ere partition disque 
 
-```shell
+```sh
 mount /dev/mapper/Arch-root /mnt
 ```
 
 - Monter la 2eme partition disque 
 
-```shell
+```sh
 mount /dev/mapper/nvme0n1p1 /mount/boot
 ```
 
 - Si vous êtes pas bon endroit on se met à la racine ( fait le si vous en savez rien :) )
 
-```shell
+```sh
 cd /
 ```
 
 - On bascule sur la racine du disque du PC pour se retrouver dans l'environnement du PC à réparer.
 
-```shell
+```sh
 arch-chroot /mnt
 ```
 
 - On regle le probleme en réalisant souvant les mises à jours 
 
-```shell
+```sh
 pacman -Suy
 ```
 
 - Il se peut qu'il faut downdgrade un paquet , s'il le faut
 
-```shell
+```sh
 downgrade <paquet>
 ```
 
 - On sort 
 
-```shell
+```sh
 exit
 ```
 - On demonte les partitions , c'est bien de vérifier que les partitions qui n'ont pas été démontées correspondent à celles de l'environnement live seulement et pas du disque du PC
 
-```shell
+```sh
 umount -a # Il risque d'avoir des erreurs mais rien de grave
 ```
 
 - On ferme la partition LUKS.
 
-```shell
+```sh
  cryptsetup luksOpen toto # toto fais refference à la 3eme commande lorsqu'on dechiffrer le disque
 ```
 

@@ -39,7 +39,7 @@ Il faut à présent mettre votre thème. Dans le dossier ```themes``` de votre b
 git clone le_nom_du_dépôt
 ```
 
-Installez Git si nécessaire.
+Installez Git si nécessaire. Voir le tuto ici : [Mettre Endearvours sur sa clef](/tutoriels/github/) 
 
 Rafraîchissez la page et vous verrez le site comme dans la page de démo. Je vous laisse la documentation de votre projet pour l'adapter au mieux à vos envies. Tous vos articles s'écrivent sous forme Markdown, c'est de l'HTML simplifié (je le dis car vous pouvez mettre de l'HTML dans des fichiers Markdown
 
@@ -82,7 +82,7 @@ jobs:
           #TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-Créez un token et mettez-le dans votre projet. Puis, faites un git pull origin main pour mettre le workflow dans votre projet et effectuez les commandes suivantes :
+Créez un token et mettez-le dans votre projet. Puis, faites un ```git pull origin main``` pour mettre le workflow dans votre projet et effectuez les commandes suivantes :
 
 ```sh
 git add .

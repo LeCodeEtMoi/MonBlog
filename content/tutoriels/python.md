@@ -1,5 +1,5 @@
 +++
-title="Python"
+title="Créer un environnement virtuel avec fish"
 date=2024-02-22
 draft=false
 +++

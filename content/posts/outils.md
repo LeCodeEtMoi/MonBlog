@@ -66,3 +66,8 @@ Les outils cools sur le web :
 # Les blog sympa : 
 
 [La Cascade](https://la-cascade.io/) : Un peu de tout sur CSS, HTML, SVG et JS,traduit du web anglophone
+
+# Les associations : 
+
+[NORML](https://www.norml.fr/wp-content/uploads/2025/02/PDF-Livret-Liberte-Legalite-Fraternite-NORML-France.pdf) : Une association qui lutte pour la légalisation du cannabis 
+
