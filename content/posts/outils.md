@@ -67,7 +67,17 @@ Les outils cools sur le web :
 
 [La Cascade](https://la-cascade.io/) : Un peu de tout sur CSS, HTML, SVG et JS,traduit du web anglophone
 
+[Bon Pote](https://bonpote.com/) : Média indépendant sur l'environnement, 100% financé par ses lecteurs
+
+
 # Les associations : 
 
 [NORML](https://www.norml.fr/wp-content/uploads/2025/02/PDF-Livret-Liberte-Legalite-Fraternite-NORML-France.pdf) : Une association qui lutte pour la légalisation du cannabis 
+
+
+[Canopee](https://www.canopee.ong/) : est une association experte qui agit à la racine des problèmes , faire changer les lois et les pratiques des entreprises pour protéger les forêts en France et dans le monde.
+
+# Orchestres : 
+
+[Curieux](https://curieuxorchestre.com) : est un orchestre spécialisé dans la musique narrative de 15 jeunes musicien·nes uni.es par la volonté de mettre l’art au service des problématiques de demain.
 
