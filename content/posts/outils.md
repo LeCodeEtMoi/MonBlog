@@ -1,5 +1,5 @@
 +++
-title="Les outils"
+title="Les outils et associations cool :) "
 date=2024-10-15
 draft=false
 +++
@@ -76,6 +76,8 @@ Les outils cools sur le web :
 
 
 [Canopee](https://www.canopee.ong/) : est une association experte qui agit à la racine des problèmes , faire changer les lois et les pratiques des entreprises pour protéger les forêts en France et dans le monde.
+
+[La Quadrature du Net](https://www.laquadrature.net/) : promeut et défend les libertés fondamentales dans l’environnement numérique. L’association lutte contre la censure et la surveillance, que celles-ci viennent des États ou des entreprises privées. Elle questionne la façon dont le numérique et la société s’influencent mutuellement. Elle œuvre pour un Internet libre, décentralisé et émancipateur.
 
 # Orchestres : 
 
