@@ -24,7 +24,7 @@ psql
 
 ## Commandes Pratiques pour Naviguer dans la Base de Données
 
-Attention pour les commande sql ne pas oublier le ; à la fin !
+Attention pour les commandes SQL ne pas oublier le ; à la fin !
 
 Pour lister toutes les bases de donée
 
@@ -37,7 +37,7 @@ Se Connecter à une Base de Données
 ```sh
 \c nom_de_la_base
 ```
-Lister les Tables :
+Lister les Tables
 
 ```sh
 \dt
@@ -46,6 +46,11 @@ Lister les attributs de la table
 
 ```sh
 \d nom_de_la_table
+```
+Lister tout les utilisateur
+
+```sh
+\du
 ```
 
 Pour plus de commande
@@ -71,9 +76,5 @@ Sauvegarder une Base de Données :
 pg_dump nom_de_la_base > sauvegarde.sql
 ```
 
-Lister tout les utilisateur :
 
-```sh
-\du
-```
 
