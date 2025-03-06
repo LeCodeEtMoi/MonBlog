@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta itemprop="name" content="Le Blog du Pingouin" />
+  <meta itemprop="description" content="My blog" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://LeCodeEtMoi.github.io/MonBlog/apple-touch-icon.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="https://LeCodeEtMoi.github.io/MonBlog/favicon-32x32.png" />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="https://LeCodeEtMoi.github.io/MonBlog/favicon-16x16.png"
+  />
+  <link
+    rel="shortcut icon"
+    href="https://LeCodeEtMoi.github.io/MonBlog/favicon.ico"
+  />
+  <link rel="stylesheet" href="https://LeCodeEtMoi.github.io/MonBlog/style.css"/>
+  
+  <title>NSI : Thème 10 : Système d&#x27;exploitation </title>
+  
+
+  
+
+
+  </style>
+  <body id="page">
+
+	
+<header id="site-header" class="animated slideInUp faster">
+  <div class="hdr-wrapper section-inner">
+    <div class="hdr-left">
+      <div class="site-branding">
+        <a href="https:&#x2F;&#x2F;LeCodeEtMoi.github.io&#x2F;MonBlog&#x2F;">Le Blog du Pingouin</a>
+      </div>
+      <nav class="site-nav hide-in-mobile">
+            
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//posts">Posts</a>
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//tutoriels">Tutoriels</a>
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//maths_nsi">Maths NSI</a>
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//jazz">Musique et compréhension</a>
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//about">About</a>
+        
+      </nav>
+    </div>
+    <div class="hdr-right hdr-icons">
+      <span class="hdr-social hide-in-mobile">
+        
+
+<a href="https:&#x2F;&#x2F;github.com&#x2F;LeCodeEtMoi&#x2F;MonBlog" target="_blank" rel="noopener me"
+   title="github">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+  
+</a>
+
+<a href="mailto:author@domain.com" target="_blank" rel="noopener me"
+   title="email">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+  
+</a>
+
+
+      </span>
+      <button id="menu-btn" class="hdr-btn" title="Menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-menu"
+        >
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div id="mobile-menu" class="animated fast">
+  <ul>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//posts">Posts</a></li>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//tutoriels">Tutoriels</a></li>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//maths_nsi">Maths NSI</a></li>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//jazz">Musique et compréhension</a></li>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//about">About</a></li>
+    
+  </ul>
+</div>
+
+	
+	
+
+		
+<main class="site-main section-inner animated fadeIn faster">
+  <article class="thin">
+	<header class="post-header">
+	  <div class="post-meta">
+		
+		<span>Jan 06, 2024</span>
+		<small> - 
+<span class="reading-time" title="Estimated read time">
+  
+  2 min read
+  
+</span>
+</small>
+		
+            
+	  </div>
+	  <h1>NSI : Thème 10 : Système d&#x27;exploitation </h1>
+	</header>
+
+	<div class="content">
+        
+	  <style>
+table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+th, td {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+        }
+
+th {
+    background-color: #f2f2f2;
+</style>
+<p>Qu'es qu'un systeme d'exploitation ?</p>
+<p>Un systeme d'exploitation est un logiciel spécialisé servant principalement à gerer le lien entre tous les mondes applicatifs, donc les logiciels et le monmateriels comme les processeurs et ainsi de suite . Le systeme d'exploitation est le premier programme éxecuté lors de démarage d'un ordinaeur . Son rôle est de :</p>
+<ul>
+<li>
+<p>Fournir une interface entre l'humain et la machine (IHM)</p>
+</li>
+<li>
+<p>Gérer les ressource de l'ordinateurt ( mémoire , péréphiriques ... )</p>
+</li>
+<li>
+<p>Gérer les utilisateurs et leurs droits d'accés au fichiers .</p>
+</li>
+</ul>
+<p>En fonctionne des besoins d, on va utiliser un systeme d'exploitation ou un autre , plus ou moins spécialisé par rapport à ce que l'on souhaite ( mais bon entre nous on c'est très bien que Linux est bien mieux :p) Il y a deux type d'OS : les OS libres comme Linux( le code est public et il peux être modifier ) et les OS propritaire comme Windows i ln'es pas possible et même illegal de modifier le cdde) Mac est entre l' OS libre et pas libre .</p>
+<p>Les systèmes d'exploitation les plus connus et utilisés dans le monde appartient à l'une des ces familles : UNIX ( Max Os , Linux , Android) et Windows .</p>
+<h2 id="arborecence">Arborecence</h2>
+<p>mettre image </p>
+<p>Remarque : L'absenceou la presence du / au début du chemin permet de distinguer un chemin relatif ( ne part pas de la racine , mais depuis un repertoire quelconque ) d'un chemin absolue ( doit indiquer &quot;le chemin&quot; dupuis la racine et indique tous les repertoire rencontré) .</p>
+<p>Lorsqu'il se connecte , un utilisateur a pour dossier courant le dossier &quot;home&quot;.</p>
+<h2 id="communication-avec-le-systeme-d-exploitation">Communication avec le système d'exploitation</h2>
+<p>a voir mais je crois que j'ai deja fait un truc sur les commande </p>
+<p>Dans tous les sytèmes d'exploitatio, on trouve qui s'applle terminal ( une des meilleur application perso :p ) qui permet d'executer des tache en écrivant des commande ( et non en cliquant sur des icône ) .</p>
+<p>Pour cela il faut connaître les commandes permettant d'effectuer des actions , voici les commande à connaitre en première spè NSI : </p>
+</head>
+<body>
+	<title>ISO 8859-15</title>
+    <table>
+        <tbody>
+            <tr>
+                <td>ls</td>
+                <td>liste le contenue du repertoire courant </td>
+            </tr>
+            <tr>
+                <td>mv</td>
+                <td> Déplace des fichiers ou des repertoires </td>
+            </tr>
+            <tr>
+                <td>cd</td>
+                <td>Change de répertoire</td>
+            </tr>
+            <tr>
+                <td>mkdir</td>
+                <td>Supprime un dossier</td>
+            </tr>
+            <tr>
+                <td>cp</td>
+                <td>Coppie des fichier ou des répertoires</td>
+            </tr>
+            <tr>
+                <td>rm</td>
+                <td>Supprime un fichier ou un répertoire</td>
+            </tr>
+            <tr>
+                <td>pwd</td>
+                <td>Affiche le repertoire ou l'on se trouve exactement</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<h2 id="droit-et-permission">Droit et permission</h2>
+<p>Chaque utilisateur possede des droites qui lui ont été octroyés par le &quot;super utilisateur&quot; . Nous nous interesserons ici uniquement aux droits liés au fichiers , mais vous devez savoir qu'il existe d'autre droits liées aux autre éléments du système d'exploitation ( imprimante , installation d'application ...)</p>
+<h3 id="les-fichiers-et-les-repertoires-possedents-3-types-de-droits">Les fichiers et les repertoires possèdents 3 types de droits :</h3>
+<ul>
+<li>
+<p>Les droits en lecture ( symbolisant par la lecture r ) : est-il possible de lire un document ?</p>
+</li>
+<li>
+<p>Les droit d'écriture ( lettre w) : est -il possible de modifier du contenue ?</p>
+</li>
+<li>
+<p>Les droits d'execution ( lttre x ) : est - il possible d'executer du contenue de ce fichier </p>
+</li>
+</ul>
+<p>Il existe 3 types d'utilisateurs pour un fichier ou un répertoire :</p>
+<ul>
+<li>
+<p>le propriétaire du fichier : il est symbolisé par la lecture &quot;u&quot; (user)</p>
+</li>
+<li>
+<p>un fichier est associer à un groupe tous les utilisateurs appartenant à ce groupe possèdent des droits particulier sur ce fichier : Le groupe est symbolisé par la ettre &quot;g&quot; (group)</p>
+</li>
+<li>
+<p>pour les autres utilisateur . C'est utilisateur sont symbolisés par la lecture &quot;o&quot; (other)</p>
+</li>
+</ul>
+<p>Exemple : Un fichier dont le droit d'accès est rwxr-xr est accessoire :</p>
+<ul>
+<li>
+<p>en lecture ecriture pour le propriétaire </p>
+</li>
+<li>
+<p>en lecture et en exécution pour le groupe</p>
+</li>
+<li>
+<p>en lecture seul pour les autre</p>
+</li>
+</ul>
+<p>La comande chmod permet de modifier les droits d'accès à un fichier </p>
+
+	</div>
+	<hr class="post-end">
+	<footer class="post-info">
+    
+    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>646 Words</p>
+    
+    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2024-01-06</p>
+    
+	</footer>
+  </article>
+    
+  
+  <div class="post-nav thin">
+	
+	
+  </div>
+
+  
+</main>
+
+	  </div>
+	  
+	  
+
+
+
+<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+  <p>&copy; 2025 <a href="https:&#x2F;&#x2F;LeCodeEtMoi.github.io&#x2F;MonBlog&#x2F;">LaPetiteLigneDeCode</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+  <p>Made with <a href="https://www.getzola.org" target="_blank" rel="noopener">Zola</a> &#183; Theme <a href="https://github.com/VersBinarii/hermit_zola" target="_blank" rel="noopener">Hermit_Zola</a>
+	
+  </p>
+</footer>
+
+
+
+
+	</div>
+	
+	<script src="https://LeCodeEtMoi.github.io/MonBlog/js/main.js"></script>
+
+	<!-- Math rendering -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body, { delimiters: [ {left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}, {left: '\\[', right: '\\]', display: true}, {left: '\\(', right: '\\)', display: false}]});"></script>
+
+    
+
+	
+	<script src="https://LeCodeEtMoi.github.io/MonBlog/js/copy.js"></script>
+	
+	<script src="https://LeCodeEtMoi.github.io/MonBlog/js/main.js"></script>
+
+    
+    
+
+	
+  </body>
+</html>
