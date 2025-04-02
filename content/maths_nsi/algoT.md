@@ -44,6 +44,56 @@ def Tri_insertion(T):
             j = j-1
     return T
  ```
+```python
+def diviser(L):
+    """
+    entré : 1 liste
+    sortie : 2 liste // 2
+    """
+    L1 = L[: len(L) // 2]
+    L2 = L[len(L) // 2 :]
+    return L1, L2
+
+
+def fusioner(L1, L2):
+    """
+    entrée : 2 listes triée
+    sortie : une liste "total" triée
+    """
+    L3 = []  # la liste qu'on va renvoyer
+    i = 0
+    j = 0
+
+    while i < len(L1) and j < len(L2):
+        if L1[i] > L2[j]:
+            L3.append(L2[j])
+            j += 1
+        else:
+            L3.append(L1[i])
+            i += 1
+    for p in range(j, len(L2)):
+        L3.append(L2[p])
+    for p in range(i, len(L1)):
+        L3.append(L1[p])
+
+    return L3
+
+
+def TrieFusion(L):
+    """
+    entrée L
+    sortie : L trié
+    """
+    # Cas de base
+    if len(L) == 1:
+        return L
+    else:
+        L1, L2 = diviser(L)
+        L1 = TrieFusion(L1)
+        L2 = TrieFusion(L2)
+        return fusioner(L1, L2)
+```
+
 
  ```python
  def Recherche_Dichotomique(L,valeur):

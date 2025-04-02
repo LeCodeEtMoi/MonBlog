@@ -76,5 +76,9 @@ Sauvegarder une Base de Données :
 pg_dump nom_de_la_base > sauvegarde.sql
 ```
 
+Supprimer une Base de Données ( il faut être admin)
 
+```sh
+DROP DATABASE nom_db;
+```
 
