@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta itemprop="name" content="Le Blog du Pingouin" />
+  <meta itemprop="description" content="My blog" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://LeCodeEtMoi.github.io/MonBlog/apple-touch-icon.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="https://LeCodeEtMoi.github.io/MonBlog/favicon-32x32.png" />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="https://LeCodeEtMoi.github.io/MonBlog/favicon-16x16.png"
+  />
+  <link
+    rel="shortcut icon"
+    href="https://LeCodeEtMoi.github.io/MonBlog/favicon.ico"
+  />
+  <link rel="stylesheet" href="https://LeCodeEtMoi.github.io/MonBlog/style.css"/>
+  
+  <title>NSI : Thème 9 : Rechereche dichotomique </title>
+  
+
+  
+
+
+  </style>
+  <body id="page">
+
+	
+<header id="site-header" class="animated slideInUp faster">
+  <div class="hdr-wrapper section-inner">
+    <div class="hdr-left">
+      <div class="site-branding">
+        <a href="https:&#x2F;&#x2F;LeCodeEtMoi.github.io&#x2F;MonBlog&#x2F;">Le Blog du Pingouin</a>
+      </div>
+      <nav class="site-nav hide-in-mobile">
+            
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//posts">Posts</a>
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//tutoriels">Tutoriels</a>
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//maths_nsi">Maths NSI</a>
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//jazz">Musique et compréhension</a>
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//about">About</a>
+        
+      </nav>
+    </div>
+    <div class="hdr-right hdr-icons">
+      <span class="hdr-social hide-in-mobile">
+        
+
+<a href="https:&#x2F;&#x2F;github.com&#x2F;LeCodeEtMoi&#x2F;MonBlog" target="_blank" rel="noopener me"
+   title="github">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+  
+</a>
+
+<a href="mailto:author@domain.com" target="_blank" rel="noopener me"
+   title="email">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+  
+</a>
+
+
+      </span>
+      <button id="menu-btn" class="hdr-btn" title="Menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-menu"
+        >
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div id="mobile-menu" class="animated fast">
+  <ul>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//posts">Posts</a></li>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//tutoriels">Tutoriels</a></li>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//maths_nsi">Maths NSI</a></li>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//jazz">Musique et compréhension</a></li>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//about">About</a></li>
+    
+  </ul>
+</div>
+
+	
+	
+
+		
+<main class="site-main section-inner animated fadeIn faster">
+  <article class="thin">
+	<header class="post-header">
+	  <div class="post-meta">
+		
+		<span>Jan 06, 2024</span>
+		<small> - 
+<span class="reading-time" title="Estimated read time">
+  
+  4 min read
+  
+</span>
+</small>
+		
+            
+	  </div>
+	  <h1>NSI : Thème 9 : Rechereche dichotomique </h1>
+	</header>
+
+	<div class="content">
+        
+	  <p>Des volumes importants de données sont susceptibles d'être traitées par les ordinateurs. Des algorithmes efficaces sont alors nécessaires pour réaliser ces opérations comme par , exemple la sélection et la récupération des données. Les algorithmes de recherche entrent dans cette catégorie. Leur rôle est de déterminer si une donnée est présent et , le cas échéant , d'en indiquer sa position, pour effectuer des traitements annexes . La recherche d'un information dans un annuaire illustre cette idée. On recherche si telle personne est présente dans l'annuaireafin d'en déterniner l'adresse. Plus généralement , c'est l'un des mécanisme principaux des bases de données : à l'aide d'un identifiant , on souhaite retrouver les informations correspondantes. Dans cette famille d'algorithmes, la recherche dichotomique permet de traiter efficacement des données représentées dans une liste de façon ordonée .</p>
+<h3 id="problematique-comment-optimiser-le-recherche-dans-un-tableau-ordonee">Problèmatique : Comment optimiser le recherche dans un tableau ordonée ?</h3>
+<h2 id="premiere-approche-recherche-naive-a-l-aide-d-un-parcours-de-liste">Première approche Rechèrche naive à l'aide d'un parcours de liste .</h2>
+<p>Combien d'operations de comparaison doivent être effectuées au pire pour une lise n ? </p>
+<p>Réponse : n</p>
+<p>Et pour une liste de taille 2n ?</p>
+<p>Réponse : 2n</p>
+<p>Commme tout algorithme ayant cette forme, la complexité est linaire : le temps de recherche double lorsque la longeur de la liste double . On note la complecité O(n) . Mais avec cette méthode , on n'exploite pas le charactère ordonée de la liste , ce qui fait savoir que valeur de la liste n'es pas la valeur recherchée n'apprend absolument rien sur les autre valeur de la liste .</p>
+<h2 id="seconde-approche-jeu-du-plus-ou-moins-permettant-de-trouve-un-nombre">Seconde approche : Jeu du plus ou moins permettant de trouvé un nombre</h2>
+<p>Avec un peu de méthode , en combien de est-on sur de déterminer la valeur recherchée ?</p>
+<p>7 coups pour 100 valeurs ( 2⁶ = 64 / 2⁷ = 128)</p>
+<p>Sans méthode en éssayant 1 puis 2 et en testant tout les autre valeurs , combien de coups faudrait -t-il au maximum ? 100 coups !</p>
+<p>L'idée centrale de 2me approche repose sur l'idée de reduire de moitier l'espace de recherche à chaque étape : on reguarde la valeur du milieu et si ce n'es pas celle recherché , on sait que qu'il faut continué de chercher dans la première moitier ou dans la second . Plus préssisement , en tenant compte du caratère trié de la liste , il est posssible d'améliorer l'éfficaciter d'une telle recherche de faço conséquente en procédant ansi :</p>
+<ol>
+<li>
+<p>On détermine l'élement m au milieu de la liste ;</p>
+</li>
+<li>
+<p>Si c'est la valeur recherchée , s'arrête avec un succès ;</p>
+</li>
+<li>
+<p>Sinon , deux cas sont possible</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>Si m est plus grand que la valeur recherchée , comme la liste est triée , cela signifie qu'il suffit de continuer à chercher dans la première moitier de la liste</p>
+</li>
+<li>
+<p>sinon , il suffit de chercher dans l'autre moitier.</p>
+</li>
+</ul>
+<ol start="4">
+<li>on répète cela jusque avoir trouvé la valeur recherché , ou bien avoir réduit l'intervalle de recherche à un intevalle vide , ce qui signifie que la valeur recherchée n'es pas présente.</li>
+</ol>
+<p><strong>À chaque étape , on coupe l'intervalle de recherche en deux et on en choisit une moitier . On dit que l'on possède par dichotomie , du grec dikha (en deux) et tomos ( couper)</strong></p>
+<p>Entrée : tab une liste triée et valeur une valeur que l'on veux recherche dans la liste</p>
+<p>Sortie : La valeur n'est pas dans tab sinon l'indice dans la valeur est dans le tableau</p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>def recherche_dichotomique(tab,val):
+</span><span>	gauche = 0
+</span><span>	droite = len(tab)-1
+</span><span>	while(gauche+droite)//2
+</span><span>	if tab [milieu] == val:
+</span><span>		return
+</span><span>	elif tab[milieu] &gt; val:
+</span><span>		droite = milieu -1
+</span><span>	else:
+</span><span>		gauche = milieu + 1
+</span><span>	return -1
+</span></code></pre>
+<p>Exemple d'application : On recherche la valeur 10 dans le tableau [3,3,5,6,8,11,13,14,14,17,19,21,23]</p>
+<p>gauche = 0</p>
+<p>milieu = 6</p>
+<p>droite = 12</p>
+<p>10 &lt; 13</p>
+<p>gauche = 0</p>
+<p>milieu = 2</p>
+<p>droitee = 5</p>
+<p>10 &gt; 5</p>
+<p>gauche = 3</p>
+<p>milieu = 4</p>
+<p>droite = 5</p>
+<p>10 &lt; 11</p>
+<h2 id="terminaison-de-ce-programme">Terminaison de ce programme :</h2>
+<p>La fonction recherche_dichotomique contient une boucle non bornéee while et pour être sur de toujours obtenir un résultat , il faut s'assurer que le progrmme terminer , que l'on ne reste pas bloqué infiniment dans la boucle . Pour prouver que c'est bien le cas , nous allons utliser un variant de boucle.</p>
+<p><strong>Variant de boucle</strong></p>
+<p>Il s'agit d'une quantité entière qui :</p>
+<ul>
+<li>
+<p>Doit être positive ou nulle pour rester dans la boucle</p>
+</li>
+<li>
+<p>Doit décroitre à chaque itération</p>
+</li>
+</ul>
+<p>Si l'on arrive a trouvé une telle quantité , il est évident que l'on a nécessairement sortie de la boucle au bout d'un nombre fini di'tération , puisqu'un entier positif ne peux décroitre infiniment.</p>
+<p>Si l'on arrive trouver une telle quantité , il est évident que l'on a nessairement sortie de la boucle au bout d'un nombre fini d'operation , puisqu'un entier positif ne peux décroirtre indefiniment.</p>
+<p><strong>Preuve de la terminiason</strong></p>
+<p>Pour le cas qui nous occupe , un variant est très facile à trouvé : la quantité droite - gauche .
+La condition de boucle étant gauche &lt;= droite , cela correspond exactement à ce que notre variant soit positif ou nul .</p>
+<p>Montrons maintenant que le variant décroit strictement lors de l'execution du corps de boucle .
+On commence par définir : milieu = (gauche + droite)//2
+ainsi gauche &lt;= milieu &lt;= droite
+Ensuite trois cas sont possibles : </p>
+<ul>
+<li>
+<p>Si tab[milieu] == val : On sort de la boucle , terminson assuré </p>
+</li>
+<li>
+<p>Si tab[milieu] &gt; val : On modifie la valeur de droite . On appelle d cette nouvelle valeur : droite - gauche &lt; milieu - gauche &lt; droite - gauche</p>
+</li>
+<li>
+<p>Sinon , on modifie guache et a de même :</p>
+</li>
+</ul>
+<p>Droite - gauche &lt; droite - ancien gauche .</p>
+<p>Ayant réussis à exhiber un variant pour notre boucle , nous avons prouvé qu'elle se termine bien . Bien sur , l'utilisation très basique de ce variant ne permet pas de cette manière , de justifier la complexité de la recherche dichotomique . On a prouvé qu'il diminue de 1 ( au mions ) par étape , et on peux donc seulement affirmer que le nombre d'itération est majoré par la taille initiale de tableau . Cela correspond à la complexité linéaire de l'agorithme naif . On peux améliorer cette borne en exploitant l'idée de la dichotomie </p>
+
+	</div>
+	<hr class="post-end">
+	<footer class="post-info">
+    
+    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>937 Words</p>
+    
+    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2024-01-06</p>
+    
+	</footer>
+  </article>
+    
+  
+  <div class="post-nav thin">
+	
+	
+  </div>
+
+  
+</main>
+
+	  </div>
+	  
+	  
+
+
+
+<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+  <p>&copy; 2025 <a href="https:&#x2F;&#x2F;LeCodeEtMoi.github.io&#x2F;MonBlog&#x2F;">LaPetiteLigneDeCode</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+  <p>Made with <a href="https://www.getzola.org" target="_blank" rel="noopener">Zola</a> &#183; Theme <a href="https://github.com/VersBinarii/hermit_zola" target="_blank" rel="noopener">Hermit_Zola</a>
+	
+  </p>
+</footer>
+
+
+
+
+	</div>
+	
+	<script src="https://LeCodeEtMoi.github.io/MonBlog/js/main.js"></script>
+
+	<!-- Math rendering -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body, { delimiters: [ {left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}, {left: '\\[', right: '\\]', display: true}, {left: '\\(', right: '\\)', display: false}]});"></script>
+
+    
+
+	
+	<script src="https://LeCodeEtMoi.github.io/MonBlog/js/copy.js"></script>
+	
+	<script src="https://LeCodeEtMoi.github.io/MonBlog/js/main.js"></script>
+
+    
+    
+
+	
+  </body>
+</html>
