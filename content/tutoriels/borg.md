@@ -33,13 +33,13 @@ mkdir nom_du_point_de_montage #Moi je l'ai appelé backup
 
 # Étape 1 : Monter le disque dur 
 
-On pbrache le disque dur , puis on reguarde ou est monter le disque 
+On branche le disque dur , puis on reguarde ou est monté le disque 
 
 ```sh
 lsblk
 ```
 
-Vous devrez avoir un truc comme ceci , on peut voir qu'il est monter dans sda1
+Vous devrez avoir un truc qui ressemble à ceci
 
 ```sh
 NAME            MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS
@@ -53,7 +53,7 @@ nvme0n1         259:0    0 476,9G  0 disk
     └─Arch-root 254:2    0 474,8G  0 lvm   /
 ```
 
-Une fois qu'on a identifier le chemin du disque dure on va monter le disque
+Une fois qu'on a identifié le chemin du disque dure on va monter le disque
 
 On fait alors la commande suivante
 

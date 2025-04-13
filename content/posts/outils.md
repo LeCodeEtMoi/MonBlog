@@ -83,3 +83,7 @@ Les outils cools sur le web :
 
 [Curieux](https://curieuxorchestre.com) : est un orchestre spécialisé dans la musique narrative de 15 jeunes musicien·nes uni.es par la volonté de mettre l’art au service des problématiques de demain.
 
+# Les gens cool : 
+
+[Jérôme Zindy Vélo-Reporter](https://www.jeromezindy.fr/)
+
