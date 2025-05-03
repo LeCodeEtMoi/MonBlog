@@ -81,4 +81,15 @@ Supprimer une Base de Données ( il faut être admin)
 ```sh
 DROP DATABASE nom_db;
 ```
+Créé une base donnée
 
+```sh
+CREATE DATABASE nom;
+```
+
+Ajouter table
+
+```sh
+ALTER TABLE nom_de_la_table ADD COLUMN exemple TEXT;
+
+```

@@ -32,3 +32,6 @@ Attention on peux avoir 2 adress ipsi connecter en ethernet et wifi
 pour rechercher les appreils conecter à la box : sudo nmap -sn 192.168.1.0/24
 
 Ip via eternet : 192.168.1.118
+
+
+##  Pas fini 
