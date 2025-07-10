@@ -65,11 +65,13 @@ Les outils cools sur le web :
 [Funkwhale, est un serveur de flux continu de musique libre, auto-hébergé et fédéré via le protocole ActivityPub au sein du Fediverse](https://www.funkwhale.audio/)
 
 
-# Les blog sympa : 
+# Les blog et média sympa : 
 
 [La Cascade](https://la-cascade.io/) : Un peu de tout sur CSS, HTML, SVG et JS,traduit du web anglophone
 
 [Bon Pote](https://bonpote.com/) : Média indépendant sur l'environnement, 100% financé par ses lecteurs
+
+[Qqf](https://archives.qqf.fr/) : Média qui répond à cette question qui nous taraude face aux grands enjeux planétaires d'aujourd'hui et demain. Environnement, alimentation, consommation, santé, traitement des animaux, problématiques sociétales..
 
 
 # Les associations : 
