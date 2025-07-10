@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta itemprop="name" content="Le Blog du Pingouin" />
+  <meta itemprop="description" content="My blog" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://LeCodeEtMoi.github.io/MonBlog/apple-touch-icon.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="https://LeCodeEtMoi.github.io/MonBlog/favicon-32x32.png" />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="https://LeCodeEtMoi.github.io/MonBlog/favicon-16x16.png"
+  />
+  <link
+    rel="shortcut icon"
+    href="https://LeCodeEtMoi.github.io/MonBlog/favicon.ico"
+  />
+  <link rel="stylesheet" href="https://LeCodeEtMoi.github.io/MonBlog/style.css"/>
+  
+  <title>Réaliser une sauveguarde sur ArchLinux via Borg</title>
+  
+
+  
+
+
+  </style>
+  <body id="page">
+
+	
+<header id="site-header" class="animated slideInUp faster">
+  <div class="hdr-wrapper section-inner">
+    <div class="hdr-left">
+      <div class="site-branding">
+        <a href="https:&#x2F;&#x2F;LeCodeEtMoi.github.io&#x2F;MonBlog&#x2F;">Le Blog du Pingouin</a>
+      </div>
+      <nav class="site-nav hide-in-mobile">
+            
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//posts">Posts</a>
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//tutoriels">Tutoriels</a>
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//maths_nsi">Maths NSI</a>
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//jazz">Musique et compréhension</a>
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//about">About</a>
+        
+      </nav>
+    </div>
+    <div class="hdr-right hdr-icons">
+      <span class="hdr-social hide-in-mobile">
+        
+
+<a href="https:&#x2F;&#x2F;github.com&#x2F;LeCodeEtMoi&#x2F;MonBlog" target="_blank" rel="noopener me"
+   title="github">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+  
+</a>
+
+<a href="mailto:author@domain.com" target="_blank" rel="noopener me"
+   title="email">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+  
+</a>
+
+
+      </span>
+      <button id="menu-btn" class="hdr-btn" title="Menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-menu"
+        >
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div id="mobile-menu" class="animated fast">
+  <ul>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//posts">Posts</a></li>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//tutoriels">Tutoriels</a></li>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//maths_nsi">Maths NSI</a></li>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//jazz">Musique et compréhension</a></li>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//about">About</a></li>
+    
+  </ul>
+</div>
+
+	
+	
+
+		
+<main class="site-main section-inner animated fadeIn faster">
+  <article class="thin">
+	<header class="post-header">
+	  <div class="post-meta">
+		
+		<span>Apr 13, 2025</span>
+		<small> - 
+<span class="reading-time" title="Estimated read time">
+  
+  1 min read
+  
+</span>
+</small>
+		
+            
+	  </div>
+	  <h1>Réaliser une sauveguarde sur ArchLinux via Borg</h1>
+	</header>
+
+	<div class="content">
+        
+	  <p>Borg est un programme de sauvegarde par déduplication. En option, il prend en charge la compression et le chiffrement authentifié.</p>
+<p>L'objectif principal de Borg est de fournir un moyen efficace et sûr de sauvegarder des données. La technique de déduplication des données utilisée rend Borg approprié pour les sauvegardes quotidiennes puisque seules les modifications sont stockées. La technique de chiffrement authentifié permet d'effectuer des sauvegardes vers des cibles qui ne sont pas entièrement fiables. </p>
+<p>Pour toutes les questions que le tuto ne repond pas voici la page du wiki d'archlinux : <a href="https://wiki.archlinux.org/title/Borg_backup_(Fran%C3%A7ais)">ici</a></p>
+<p>La documentation borg : <a href="https://borgbackup.readthedocs.io/en/stable/">ici</a></p>
+<h1 id="etape-0-instalation-et-mise-en-place">Étape 0 : Instalation et mise en place</h1>
+<p>Installation borg: </p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#c0c5ce;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#bf616a;">pacman -S</span><span> borg
+</span></code></pre>
+<p>Il nous faudra un point de montage , crééons le maintenant (si pas déjà fait):</p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#c0c5ce;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#96b5b4;">cd</span><span> /mnt
+</span><span style="color:#bf616a;">mkdir</span><span> nom_du_point_de_montage </span><span style="color:#65737e;">#Moi je l&#39;ai appelé backup
+</span></code></pre>
+<h1 id="etape-1-monter-le-disque-dur">Étape 1 : Monter le disque dur</h1>
+<p>On branche le disque dur , puis on reguarde ou est monté le disque </p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#c0c5ce;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#bf616a;">lsblk
+</span></code></pre>
+<p>Vous devrez avoir un truc qui ressemble à ceci</p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#c0c5ce;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#bf616a;">NAME</span><span>            MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS
+</span><span style="color:#bf616a;">sda</span><span>               8:0    0 931,5G  0 disk
+</span><span style="color:#bf616a;">└─sda1</span><span>            8:1    0 931,5G  0 part  
+</span><span style="color:#bf616a;">nvme0n1</span><span>         259:0    0 476,9G  0 disk
+</span><span style="color:#bf616a;">├─nvme0n1p1</span><span>     259:1    0   128M  0 part  /boot
+</span><span style="color:#bf616a;">└─nvme0n1p2</span><span>     259:2    0 476,8G  0 part
+</span><span>  </span><span style="color:#bf616a;">└─cryptVol</span><span>    254:0    0 476,8G  0 crypt
+</span><span>    </span><span style="color:#bf616a;">├─Arch-swap</span><span> 254:1    0     2G  0 lvm   </span><span style="color:#b48ead;">[</span><span>SWAP</span><span style="color:#b48ead;">]
+</span><span>    </span><span style="color:#bf616a;">└─Arch-root</span><span> 254:2    0 474,8G  0 lvm   /
+</span></code></pre>
+<p>Une fois qu'on a identifié le chemin du disque dure on va monter le disque</p>
+<p>On fait alors la commande suivante</p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#c0c5ce;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#bf616a;">sudo</span><span> mount chemin_du_disque_dure chemin_du_point_de_montage
+</span></code></pre>
+<p>Pour moi cela donne </p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#c0c5ce;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#bf616a;">sudo</span><span> mount /dev/sda1 /mnt/backup
+</span></code></pre>
+<h1 id="etape-2-on-verifie-que-on-a-bien-monte-le-disque-dure">Étape 2 On verifie que on a bien monté le disque dure</h1>
+<ul>
+<li>Si vous avez déja réaliser un sauveguarde :</li>
+</ul>
+<p>On est censé un dossier</p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#c0c5ce;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#bf616a;">ls</span><span> /mnt/nom_du_point_de_montage
+</span></code></pre>
+<p>On fait donc ensuite</p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#c0c5ce;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#bf616a;">ls</span><span> /mnt/nom_du_point_de_montage/le_nom_du_dossier
+</span></code></pre>
+<p>On est sensé avoir ceci </p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#c0c5ce;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#bf616a;">config</span><span>  data/  hints.859  index.859  integrity.859  README
+</span></code></pre>
+<ul>
+<li>Si vous n'vez encore jamais réaliser de sauveguarde</li>
+</ul>
+<pre data-lang="sh" style="background-color:#2b303b;color:#c0c5ce;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#bf616a;">borg</span><span> init</span><span style="color:#bf616a;"> --encryption</span><span>=repokey /mnt/nom_du_point_de_montage/nom_du_repo
+</span></code></pre>
+<h1 id="etape-3-faire-la-sauveguarde">Étape 3 : Faire la sauveguarde</h1>
+<p>L'étape la plus importe :)</p>
+<p>Nous on va créé une archive avec un nom unique en lui donnant comme nom la date de quand elle a été réaliser :</p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#c0c5ce;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#bf616a;">borg</span><span> create</span><span style="color:#bf616a;"> --compression</span><span> lz4</span><span style="color:#bf616a;"> --list</span><span> /mnt/nom_du_point_de_montage/le_nom_du_dossier::archive-nom_d_utilisateur$(</span><span style="color:#bf616a;">date</span><span> +&quot;</span><span style="color:#a3be8c;">%Y-%m-%d_%H-%M-%S</span><span>&quot;) chemin_de_ou_part_la_sauveguarde
+</span></code></pre>
+<p>Plus le chemin part de la racine plus on archive de chose. Il est conseiller de prendre comme chemin : /home/nom_d_utilisateur</p>
+<p>Quand la sauveguarde est fini ( c'est sensé être un peu long si vous avez des films ou beacoup de fichier :) ) nous pouvons passer à l'étape suivante </p>
+<h1 id="etape-4-verifier-que-la-sauveguarde-a-bien-ete-realisee">Étape 4 : Verifier que la sauveguarde a bien été réalisée</h1>
+<pre data-lang="sh" style="background-color:#2b303b;color:#c0c5ce;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#bf616a;">borg</span><span> list /mnt/nom_du_point_de_montage/le_nom_du_dossier
+</span></code></pre>
+<p>Vous devriez voir toutes les archives réaliser ou qu'une seul si c'est votre première archives .</p>
+<h1 id="etape-5-demonter-le-disque-proprement-apres-sauvegarde">Étape 5 : Démonter le disque proprement après sauvegarde</h1>
+<pre data-lang="sh" style="background-color:#2b303b;color:#c0c5ce;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#96b5b4;">cd </span><span style="color:#bf616a;">~
+</span><span style="color:#bf616a;">sudo</span><span> umount /mnt/nom_du_point_de_montage
+</span></code></pre>
+<p>Voilà vous avez fini votre sauveguarde </p>
+
+	</div>
+	<hr class="post-end">
+	<footer class="post-info">
+    
+    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>495 Words</p>
+    
+    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2025-04-13</p>
+    
+	</footer>
+  </article>
+    
+  
+  <div class="post-nav thin">
+	
+	
+  </div>
+
+  
+</main>
+
+	  </div>
+	  
+	  
+
+
+
+<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+  <p>&copy; 2025 <a href="https:&#x2F;&#x2F;LeCodeEtMoi.github.io&#x2F;MonBlog&#x2F;">LaPetiteLigneDeCode</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+  <p>Made with <a href="https://www.getzola.org" target="_blank" rel="noopener">Zola</a> &#183; Theme <a href="https://github.com/VersBinarii/hermit_zola" target="_blank" rel="noopener">Hermit_Zola</a>
+	
+  </p>
+</footer>
+
+
+
+
+	</div>
+	
+	<script src="https://LeCodeEtMoi.github.io/MonBlog/js/main.js"></script>
+
+	<!-- Math rendering -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body, { delimiters: [ {left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}, {left: '\\[', right: '\\]', display: true}, {left: '\\(', right: '\\)', display: false}]});"></script>
+
+    
+
+	
+	<script src="https://LeCodeEtMoi.github.io/MonBlog/js/copy.js"></script>
+	
+	<script src="https://LeCodeEtMoi.github.io/MonBlog/js/main.js"></script>
+
+    
+    
+
+	
+  </body>
+</html>
