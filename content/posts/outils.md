@@ -73,6 +73,8 @@ Les outils cools sur le web :
 
 [Qqf](https://archives.qqf.fr/) : Média qui répond à cette question qui nous taraude face aux grands enjeux planétaires d'aujourd'hui et demain. Environnement, alimentation, consommation, santé, traitement des animaux, problématiques sociétales..
 
+[arsouyes](https://www.arsouyes.org/articles/) : Passionnés d'informatique depuis qu'on est tombés dedans, nous avons créé le site des arsouyes en 2006 pour y partager nos découvertes, nos expériences et nos réflexions.
+
 
 # Les associations : 
 
