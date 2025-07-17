@@ -6,8 +6,8 @@ draft=false
 
 
 
-Je me suis toujours ce que voulais dire c'est titre des oeuvre classique comme Prélude op. 32 no 1 en Do majeur, Allegro vivace ou bien Symphonie no 25 en sol mineur, K. 183 (fin 1773) .
-Ce n'est pas nous embetter mais c'est que c'est très rigoureux et que les titre aplique des regles bien préssise . J'ai réaliser un tableau pour comprendre chaque partie du titre de l'oeuvre 
+Je me suis toujours demandé ce que voulaient dire ces titres d'œuvres classiques comme Prélude op. 32 no 1 en do majeur, Allegro vivace ou bien Symphonie no 25 en sol mineur, K. 183 (fin 1773).
+Ce n'est pas nous pour embêter, mais c'est que c'est très rigoureux et que les titres appliquent des règles bien précisées. J'ai réalisé un tableau pour comprendre chaque partie du titre de l'œuvre.
 
 <table>
         <thead>
