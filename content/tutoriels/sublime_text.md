@@ -274,6 +274,8 @@ Pour + de packages :
 C'est [ici](https://draculatheme.com/sublime)
 
 
+Pour les autre theme : [ici](https://itsfoss.com/best-sublime-text-themes/)
+
 ## Créé un projet 
 
 Un projet permet d'avoir une certaine configuration pour votre espace de travail
