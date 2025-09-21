@@ -1,6 +1,5 @@
 +++
-title="Se connecter au serveur IUT 2 de l’Université Grenoble Alpes depuis Arch Linux
-"
+title="Se connecter au serveur IUT 2 de l’Université Grenoble Alpes depuis Arch Linux"
 date=2025-09-20
 draft=false
 +++
