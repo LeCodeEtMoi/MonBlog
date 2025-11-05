@@ -65,7 +65,7 @@ ssh -f -N -L 5900:localhost:5900 VOTRE_LOGIN@iut2-dg-transit.u-ga.fr
 
 - `-N` : ne lance aucune commande distante (on veut juste le tunnel).
 
-- `-L 5900:localhost:5900` : out ce qui arrive sur le port 5900 de votre machine sera redirigé vers le même port sur le serveur distant.
+- `-L 5900:localhost:5900` : tout ce qui arrive sur le port 5900 de votre machine sera redirigé vers le même port sur le serveur distant.
 
 > **Vous serez invité(e) à entrer votre mot de passe** du compte UGA (ou votre clé SSH si vous avez configuré l’authentification par clé).
 
@@ -116,7 +116,69 @@ pkill -f "ssh -f -N -L 5900:localhost:5900"
 sudo killall openconnect
 ```
 
+# Fonctionnement de scp
+
+`scp` (Secure Copy) est l’utilitaire de copie sécurisée fourni avec le client OpenSSH.
+Il permet de transférer des fichiers ou des répertoires entre votre poste local et une machine distante (ou entre deux machines distantes) en s’appuyant sur le protocole SSH. Le trafic est chiffré, donc vos données restent confidentielles.
+
+```sh
+scp [options] source destination
+```
 
 
+- **source**: chemin du fichier ou du répertoire que vous voulez copier.
+
+- **destination**: où placer le(s) fichier(s). Peut être local (/chemin/local) ou distant (user@host:/chemin/distant).
+
+- Si **source** et **destination** sont tous deux distants, le transfert passe par votre machine locale (c’est‑à‑dire “pull‑push”).
+
+> Rappel : le caractère : sépare l’identifiant de la machine (user@host) du chemin distant.
+
+## Options les plus courantes
 
 
+| Option           | Signification                                                | Exemple d’usage                                      |
+|------------------|---------------------------------------------------------------|------------------------------------------------------|
+| `-r`             | Copie récursive (pour les répertoires).                       | `scp -r dossier/ user@host:/dest/`                   |
+| `-P port`        | Port SSH non standard (note : majuscule).                     | `scp -P 2222 file.txt user@host:/dest/`              |
+| `-p`             | Conserve les timestamps, modes et propriétaires.              | `scp -p file.txt user@host:/dest/`                   |
+| `-C`             | Active la compression (utile pour les gros fichiers).         | `scp -C bigfile.iso user@host:/dest/`                |
+| `-i identity_file`| Spécifie une clé privée différente du fichier `~/.ssh/id_rsa`. | `scp -i ~/.ssh/ma_cle user@host:/dest/`              |
+| `-v`             | Mode verbeux – affiche les étapes de connexion (débogage).     | `scp -v file.txt user@host:/dest/`                   |
+| `-q`             | Mode silencieux – supprime les messages d’avertissement.      | `scp -q file.txt user@host:/dest/`                   |
+| `-l limit`       | Limite le débit en kilobits/s (ex. : `-l 500 = 500 kbps`).     | `scp -l 1000 file.txt user@host:/dest/`              |
+
+
+##  Scénarios d’utilisation classiques
+
+Copier un fichier de votre PC vers la VM
+
+```sh
+scp /chemin/local/fichier.txt  VOTRE_LOGIN@iut2-dg-transit.u-ga.fr:~/destination/
+```
+
+- `~/destination/` désigne le répertoire home de l’utilisateur distant.
+
+Copier un fichier de la VM vers votre PC
+
+```sh
+scp VOTRE_LOGIN@iut2-dg-transit.u-ga.fr:/chemin/distant/fichier.txt  ./local/
+```
+
+- `./local/` est le répertoire courant sur votre machine.
+
+Copier un répertoire entier (récursivement)
+
+```sh
+scp -r projet/ VOTRE_LOGIN@iut2-dg-transit.u-ga.fr:~/backup/
+```
+
+## Bonnes pratiques & pièges fréquents
+
+| Situation                           | Risque                                                            | Solution                                                      |
+|-------------------------------------|-------------------------------------------------------------------|---------------------------------------------------------------|
+| Oublier le `:` après `host`        | `scp` interprète tout comme un chemin local → erreur « no such file or directory ». | Toujours écrire `user@host:/chemin`.                           |
+| Port SSH non‑standard              | Connexion refusée (par défaut 22).                                | Utiliser `-P <port>`.                                          |
+| Fichiers volumineux sans compression| Transfert lent.                                                   | Ajouter `-C`.                                                  |
+| Permissions locales perdues        | Le fichier distant hérite des permissions du serveur.             | Utiliser `-p` pour conserver timestamps et modes.              |
+| Interruption du transfert          | Reprise impossible avec `scp`.                                    | Préférer `rsync -e ssh …` pour les gros transferts ou les reprises. |
