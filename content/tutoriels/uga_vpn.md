@@ -173,7 +173,7 @@ Copier un répertoire entier (récursivement)
 scp -r projet/ VOTRE_LOGIN@iut2-dg-transit.u-ga.fr:~/backup/
 ```
 
-## Bonnes pratiques & pièges fréquents     
+## Bonnes pratiques & pièges fréquents
 
 | Situation                           | Risque                                                            | Solution                                                      |
 |-------------------------------------|-------------------------------------------------------------------|---------------------------------------------------------------|
