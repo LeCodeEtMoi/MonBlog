@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta itemprop="name" content="Le Blog du Pingouin" />
+  <meta itemprop="description" content="My blog" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://LeCodeEtMoi.github.io/MonBlog/apple-touch-icon.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="https://LeCodeEtMoi.github.io/MonBlog/favicon-32x32.png" />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="https://LeCodeEtMoi.github.io/MonBlog/favicon-16x16.png"
+  />
+  <link
+    rel="shortcut icon"
+    href="https://LeCodeEtMoi.github.io/MonBlog/favicon.ico"
+  />
+  <link rel="stylesheet" href="https://LeCodeEtMoi.github.io/MonBlog/style.css"/>
+  
+  <title>Maths Chapitre 1 : Suite numérique et raisonnement par recurence</title>
+  
+
+  
+
+
+  </style>
+  <body id="page">
+
+	
+<header id="site-header" class="animated slideInUp faster">
+  <div class="hdr-wrapper section-inner">
+    <div class="hdr-left">
+      <div class="site-branding">
+        <a href="https:&#x2F;&#x2F;LeCodeEtMoi.github.io&#x2F;MonBlog&#x2F;">Le Blog du Pingouin</a>
+      </div>
+      <nav class="site-nav hide-in-mobile">
+            
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//posts">Posts</a>
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//tutoriels">Tutoriels</a>
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//maths_nsi">Maths NSI</a>
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//jazz">Musique et compréhension</a>
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//about">About</a>
+        
+      </nav>
+    </div>
+    <div class="hdr-right hdr-icons">
+      <span class="hdr-social hide-in-mobile">
+        
+
+<a href="https:&#x2F;&#x2F;github.com&#x2F;LeCodeEtMoi&#x2F;MonBlog" target="_blank" rel="noopener me"
+   title="github">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+  
+</a>
+
+<a href="mailto:author@domain.com" target="_blank" rel="noopener me"
+   title="email">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+  
+</a>
+
+
+      </span>
+      <button id="menu-btn" class="hdr-btn" title="Menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-menu"
+        >
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div id="mobile-menu" class="animated fast">
+  <ul>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//posts">Posts</a></li>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//tutoriels">Tutoriels</a></li>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//maths_nsi">Maths NSI</a></li>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//jazz">Musique et compréhension</a></li>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//about">About</a></li>
+    
+  </ul>
+</div>
+
+	
+	
+
+		
+<main class="site-main section-inner animated fadeIn faster">
+  <article class="thin">
+	<header class="post-header">
+	  <div class="post-meta">
+		
+		<span>Feb 22, 2024</span>
+		<small> - 
+<span class="reading-time" title="Estimated read time">
+  
+  3 min read
+  
+</span>
+</small>
+		
+            
+	  </div>
+	  <h1>Maths Chapitre 1 : Suite numérique et raisonnement par recurence</h1>
+	</header>
+
+	<div class="content">
+        
+	  <h1 id="definition">Definition</h1>
+<p>Une suite numerique est une suite de nombre réels , c'est a dire c'est une application de N dans ||R </p>
+<p>Notaton : </p>
+<ul>
+<li>(U<sub>n</sub>) designe l'ensemble des termes </li>
+<li>U<sub>n</sub> designe le terme de rang n</li>
+</ul>
+<h2 id="mode-de-definition-explicite-un-f-n">Mode de définition explicite U<sub>n</sub> = f(n)</h2>
+<p>&quot;Chaque terme se calcule en fonction du n&quot;</p>
+<p>Ex : </p>
+<ol>
+<li></li>
+</ol>
+<ul>
+<li>U<sub>n</sub> = 2 + 3n² = f(n) ou f(x) = 2+ 3x²</li>
+<li>U<sub>0</sub> = 2 U<sub>1</sub> = 5 U<sub>10</sub> = 302</li>
+</ul>
+<ol start="2">
+<li>U<sub>n</sub> = <math>
+<mfrac bevelled="true">
+<mfrac>
+<mi> 1 </mi>
+<mi> 2 </mi>
+</mfrac>
+</mfrac>
+n + 2 = f(n) ou f(x) = <math>
+<mfrac bevelled="true">
+<mfrac>
+<mi> 1 </mi>
+<mi> 2 </mi>
+</mfrac>
+</mfrac>x+2</math>
+</math> </li>
+</ol>
+<p><strong>Remarque</strong> : On represente la suite (U<sub>n</sub>) en plaçant les point (n,U<sub>n</sub>) </p>
+<p>Shema a réaliser </p>
+<h2 id="mode-de-definition-par-recurence">Mode de definition par récurence :</h2>
+<p>U<sub>n+1</sub> = f(U<sub>n</sub>) &quot;Chaque terme se calcule en fonction du precedant&quot;</p>
+<ol>
+<li>&quot;Chaque terme est l'inverse du precedent&quot;</li>
+</ol>
+<ul>
+<li>
+<p>U<sub>n+1</sub> = <math>
+<mfrac bevelled="true">
+<mfrac>
+<mi> 1</mi>
+<mi>U<sub>n</sub></mi>
+</mfrac>
+</mfrac>
+<math></p>
+</li>
+<li>
+<p>U<sub>0</sub> = 2</p>
+</li>
+</ul>
+<p>U<sub>1</sub> = <math>
+<mfrac bevelled="true">
+<mfrac>
+<mi> 1 </mi>
+<mi> 2 </mi>
+</mfrac>
+</mfrac>
+= 0,5<math></p>
+<p>U<sub>2</sub> = <math>
+<mfrac bevelled="true">
+<mfrac>
+<mi> 1 </mi>
+<mi> 0,5 </mi>
+</mfrac>
+</mfrac>
+= 2<math></p>
+<p>U<sub>3</sub> = <math>
+<mfrac bevelled="true">
+<mfrac>
+<mi> 1 </mi>
+<mi> 2 </mi>
+</mfrac>
+</mfrac>
+= 0,5<math></p>
+<p>U<sub>4</sub> = <math>
+<mfrac bevelled="true">
+<mfrac>
+<mi> 1 </mi>
+<mi> 0,5 </mi>
+</mfrac>
+</mfrac>
+= 2<math></p>
+<ol start="2">
+<li></li>
+</ol>
+<ul>
+<li>U<sub>n+1</sub> = U<sub>n</sub> + 4 = f(U<sub>n</sub>)</li>
+<li>U<sub>0</sub> = -1</li>
+</ul>
+<p>U<sub>1</sub> = 3
+U<sub>2</sub> = 7
+U<sub>3</sub> = 11</p>
+<ol start="3">
+<li>
+<ul>
+<li>U<sub>n+1</sub> = <math>
+<mfrac bevelled="true">
+<mfrac>
+<mi> 1 </mi>
+<mi> 2 </mi>
+</mfrac>
+</mfrac>
+U<sub>n</sub> + 2 = f(Un)
+<math></li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>U<sub>0</sub> = 0</li>
+</ul>
+<p>U<sub>1</sub> = 2
+U<sub>2</sub> = 3
+U<sub>3</sub> = 3,5</p>
+<h2 id="representation-graphique">Representation graphique</h2>
+<p>A faire </p>
+<p>Methode : </p>
+<ul>
+<li>On trace la droite d'équation y = x </li>
+<li>On trace f</li>
+<li>On trace U<sub>0</sub> sur l'axe des absisses puis U<sub>1</sub> sur l'axe des ordonées puis on reote U<sub>1</sub> sur l'axe des abscisses grâce à la droite d'équation x = y et ainsi de suite ...</li>
+</ul>
+<h1 id="cas-particulier-suite-arithmetique-et-suite-geometrique">Cas particulier : Suite arithmetique et suite géometrique</h1>
+<h2 id="suite-arithmetique">Suite arithmetique</h2>
+<ul>
+<li><h3 id="formule-de-recurence">Formule de récurence :</h3>
+</li>
+<li>
+<p>U<sub>n+1</sub> = U<sub>n</sub> + r</p>
+</li>
+<li>
+<p>U<sub>0</sub> est donnée</p>
+</li>
+<li><h3 id="formule-explicite">Formule explicite :</h3>
+</li>
+<li>
+<p>U<sub>n</sub> = U<sub>0</sub> + n * r</p>
+</li>
+<li>
+<p>U<sub>n</sub> = U<sub>p</sub> + (n - p) * r</p>
+</li>
+<li><h3 id="sommes-des-terme-successifs-u0-u1-un">Sommes des terme successifs  (U0 + U1 + .... + Un):</h3>
+</li>
+<li>
+<p>(n+1)<math>
+<mfrac bevelled="true">
+<mfrac>
+<mi>U<sub>0</sub> + U<sub>n</sub></mi>
+<mi> 2 </mi>
+</mfrac>
+</mfrac>
+<math></p>
+</li>
+</ul>
+<h2 id="suite-geometrique">Suite géometrique</h2>
+<ul>
+<li><h3 id="formule-de-recurence-1">Formule de récurence :</h3>
+</li>
+<li>
+<p>V<sub>n+1</sub> = V<sub>n</sub> * q</p>
+</li>
+<li>
+<p>V<sub>0</sub> est donnée</p>
+</li>
+<li><h3 id="formule-explicite-1">Formule explicite :</h3>
+</li>
+<li>
+<p>V<sub>n</sub> = U<sub>0</sub> * q<sup>n</sup></p>
+</li>
+<li>
+<p>V<sub>n</sub> = U<sub>p</sub> + (n - p) * r</p>
+</li>
+<li><h3 id="sommes-des-terme-successifs-v0-x-v1-x-x-un">Sommes des terme successifs  (V0 x V1 x .... x Un):</h3>
+</li>
+<li>
+<p>V<sub>0</sub><math>
+<mfrac bevelled="true">
+<mfrac>
+<mi>1-q<sup>n+1</sup></mi>
+<mi>1-q</mi>
+</mfrac>
+</mfrac>
+<math></p>
+</li>
+<li>
+<p>Formule générale  = V<sub>n = V<sub>p * V<sup>n-p</p>
+</li>
+</ul>
+<h1 id="2-le-raisonnement-par-recurence">2 Le raisonnement par récurence</h1>
+<p>Soit n un entier naturel et V<sub>n</sub> une propriete à démontrer</p>
+<h3 id="initialisation">Initialisation :</h3>
+<p>&quot;On montrer que P<sub>0</sub> est vrai ...&quot;</p>
+<p>Cas ou P<sub>n</sub> &quot;A<sub>n</sub> = B<sub>n</sub>&quot; : On calcule A<sub>0</sub> d'une part et B<sub>0</sub> d'une autre par et on verifie que les quantités sont égales</p>
+<p>Cas ou P<sub>n</sub> &quot;A<sub>n </sub>&lt; B<sub>n</sub>&quot; : On calcule A<sub>0</sub> est on verifie que l'inegalité est vérifier</p>
+<h3 id="heredite-pour-un-certain-entier-k-on-suppose-que-pk-est-vrai">Heredité : &quot;Pour un certain entier k on suppose que P<sub>k</sub> est vrai&quot;</h3>
+<p>c'est a dire A<sub>k</sub> = B<sub>k</sub> alors on doit démontrer que P<sub>k+1</sub> l'est aussi c'est a dire que A<sub>k+1</sub> = B<sub>k+1</sub></p>
+<p>Cas où P<sub>n</sub> &quot;A<sub>n</sub> = B<sub>n</sub> : Généralement on part de A<sub>k+1</sub> pour arriver à B<sub>k+1</sub> en utilisant l'HR et les éventuelles données de l'énoncé</p>
+<p>cas P<sub>n</sub> &quot;A<sub>n </sub>&lt; B<sub>n</sub> : Généralement on part de l'HR pour arriver à P<sub>k+1</sub> en détaillant les operation en justifiant le sens l'inegalité a chaque étape .</p>
+<h3 id="conclusion-pn-est-initialisee-et-hereditaire-donc-pn-vrai-pour-tout-entier-n">Conclusion &quot;P<sub>n</sub> est initialisée et héréditaire donc P<sub>n</sub> vrai pour tout entier n&quot;</h3>
+<blockquote>
+<p>Remarque : Une demonstration par recurence est bien indiquer lorsque l'on veut demontrer une assertion qui depent d'un entier </p>
+</blockquote>
+<p>!! Il existe des propriété Initialisation mais non hereditaire et Hereditaire mais non Initialiser !!</p>
+
+	</div>
+	<hr class="post-end">
+	<footer class="post-info">
+    
+    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>871 Words</p>
+    
+    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2024-02-22</p>
+    
+	</footer>
+  </article>
+    
+  
+  <div class="post-nav thin">
+	
+	
+  </div>
+
+  
+</main>
+
+	  </div>
+	  
+	  
+
+
+
+<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+  <p>&copy; 2025 <a href="https:&#x2F;&#x2F;LeCodeEtMoi.github.io&#x2F;MonBlog&#x2F;">LaPetiteLigneDeCode</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+  <p>Made with <a href="https://www.getzola.org" target="_blank" rel="noopener">Zola</a> &#183; Theme <a href="https://github.com/VersBinarii/hermit_zola" target="_blank" rel="noopener">Hermit_Zola</a>
+	
+  </p>
+</footer>
+
+
+
+
+	</div>
+	
+	<script src="https://LeCodeEtMoi.github.io/MonBlog/js/main.js"></script>
+
+	<!-- Math rendering -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body, { delimiters: [ {left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}, {left: '\\[', right: '\\]', display: true}, {left: '\\(', right: '\\)', display: false}]});"></script>
+
+    
+
+	
+	<script src="https://LeCodeEtMoi.github.io/MonBlog/js/copy.js"></script>
+	
+	<script src="https://LeCodeEtMoi.github.io/MonBlog/js/main.js"></script>
+
+    
+    
+
+	
+  </body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta itemprop="name" content="Le Blog du Pingouin" />
+  <meta itemprop="description" content="My blog" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://LeCodeEtMoi.github.io/MonBlog/apple-touch-icon.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="https://LeCodeEtMoi.github.io/MonBlog/favicon-32x32.png" />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="https://LeCodeEtMoi.github.io/MonBlog/favicon-16x16.png"
+  />
+  <link
+    rel="shortcut icon"
+    href="https://LeCodeEtMoi.github.io/MonBlog/favicon.ico"
+  />
+  <link rel="stylesheet" href="https://LeCodeEtMoi.github.io/MonBlog/style.css"/>
+  
+  <title>NSI : Theme 11: Codage des nombres a virgules</title>
+  
+
+  
+
+
+  </style>
+  <body id="page">
+
+	
+<header id="site-header" class="animated slideInUp faster">
+  <div class="hdr-wrapper section-inner">
+    <div class="hdr-left">
+      <div class="site-branding">
+        <a href="https:&#x2F;&#x2F;LeCodeEtMoi.github.io&#x2F;MonBlog&#x2F;">Le Blog du Pingouin</a>
+      </div>
+      <nav class="site-nav hide-in-mobile">
+            
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//posts">Posts</a>
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//tutoriels">Tutoriels</a>
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//maths_nsi">Maths NSI</a>
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//jazz">Musique et compréhension</a>
+        
+        <a href="https://LeCodeEtMoi.github.io/MonBlog//about">About</a>
+        
+      </nav>
+    </div>
+    <div class="hdr-right hdr-icons">
+      <span class="hdr-social hide-in-mobile">
+        
+
+<a href="https:&#x2F;&#x2F;github.com&#x2F;LeCodeEtMoi&#x2F;MonBlog" target="_blank" rel="noopener me"
+   title="github">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+  
+</a>
+
+<a href="mailto:author@domain.com" target="_blank" rel="noopener me"
+   title="email">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+  
+</a>
+
+
+      </span>
+      <button id="menu-btn" class="hdr-btn" title="Menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-menu"
+        >
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div id="mobile-menu" class="animated fast">
+  <ul>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//posts">Posts</a></li>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//tutoriels">Tutoriels</a></li>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//maths_nsi">Maths NSI</a></li>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//jazz">Musique et compréhension</a></li>
+    
+    <li><a href="https://LeCodeEtMoi.github.io/MonBlog//about">About</a></li>
+    
+  </ul>
+</div>
+
+	
+	
+
+		
+<main class="site-main section-inner animated fadeIn faster">
+  <article class="thin">
+	<header class="post-header">
+	  <div class="post-meta">
+		
+		<span>Jan 06, 2024</span>
+		<small> - 
+<span class="reading-time" title="Estimated read time">
+  
+  2 min read
+  
+</span>
+</small>
+		
+            
+	  </div>
+	  <h1>NSI : Theme 11: Codage des nombres a virgules</h1>
+	</header>
+
+	<div class="content">
+        
+	  <h1 id="decomposition">Décomposition</h1>
+<p>En base 10, l'expression 652,375 est une manière abrègée d'écrire: 6 * 10² + 5 * 10¹ + 2 * 10⁰ + 3 * 10⁻¹ + 7 * 10⁻² + 5 * 10⁻³ .</p>
+<p>On fait exactement la meme pareil pour la base 2 . Ainsi , l'expression 110,101 signifie : 1 * 2² + 1 * 2¹ + 0 * 2⁰ + 1 + 2⁻¹ + 0 * 2⁻² + 1 * 2 ⁻³</p>
+<h1 id="passer-de-la-base-2-a-la-base-10">Passer de la base 2 à la base 10</h1>
+<p>Pour convertir un nombree réel de la base vers la base 10 , on ne décompose à l'aide de puissance de 2 avec des exposants positifs et négatifs . Par exemple : 110,101 = 1 * 2² + 1 * 2¹ + 0 * 2⁰ + 1 * 2⁻¹ + 0 * 2⁻² + 1 * 2⁻³ = 4 + 2+0,5+0,125 = 6,625</p>
+<p>Exercice : converitr en base base 10 (101,101)2 = 1 * 2² + 0 * 2¹ + 1 * 2⁰ + 1 * 2⁻¹ 0 * 2⁻² + 1 * 2⁻³ = 1 * 2² +  1 * 2⁰ + 1 * 2⁻¹ + 1 * 2⁻³ = 4 + 1 + 0,5 + 0,125 = 5,625</p>
+<h1 id="passer-de-base-10-a-base-2">Passer de base 10 à base 2</h1>
+<p>Le passage de base 10 en base 2 est plus subtil . Par exemple : convertissons 124.6875 en base 2 .</p>
+<ul>
+<li>
+<p>La partie entière se transforme comme dans le <a href="https://LeCodeEtMoi.github.io/MonBlog/maths_nsi/theme11/./tutoriels/theme4/">Theme 4</a> et donc (124)10 = (1111100)2</p>
+</li>
+<li>
+<p>On transforme la partie décimale selon le shéma suivant : on multiplie la partie fractionnaire par 2 et on note la partie entière de résultat . On recommence cette opération avec la partie fractionnaire du résultat . On continue ainsi jusqu'à ce qu'on obtienne 1 .</p>
+</li>
+</ul>
+<p>0,6875 * 2 = <em>1</em>,375
+0,375 * 2 = <em>0</em>75
+0,75 * 2 = <em>1</em>,5
+0,5 * 2 = 1</p>
+<p>Les parties entières ( 0 ou 1 ) des quatre résultats donne les chiffres après la virgule de l'écriture binaire de 0,6875: (0,6875)10 = (0,1011)2</p>
+<p>Donc finalement, (124.6875)10 = (1111100,1011)2</p>
+<p>Exercice : Convertire en binaire le 7,09375</p>
+<p>Vous devez trouver le résultat 111,00011</p>
+<p>Attention ! Un nombre à développement décimal fini en base 10 ne l'est pas forcément en base 2 ( exemple 1,2 ou 0,347)</p>
+<h1 id="ecriture-scientifique">Écriture scientifique</h1>
+<p>L'écriture scientifique permet d'écrire un nombre sous la forme m * 10^n</p>
+<p>Exemple : -398457,5 = -3,984575 * 10⁵ ou 0,000025 = 2,5 * 2,5 * 10⁻⁵</p>
+<p>Nous allons pouvoir représentr des &quot;nombres à virgule&quot; écrit en base 2 , sous forme &quot;scientifique&quot; de façon completement analogue  à ce qu'on fait en base 10 .</p>
+<p>Ainsi , un nombre réel x pourra s'écrire sous la forme m * 2^p :</p>
+<ul>
+<li>
+<p>La mantisse m du nombre dans l'intervalle [(1)2, (10)2[ ( ou un nombre compris en 1(inclus) et 2(exclus) dans un langage profane </p>
+</li>
+<li>
+<p>l'exposant p un entier relatif</p>
+</li>
+</ul>
+<p>Exemple : Pour (124,6875)10 = (1111111,1011)2 = (1111111,1011)2 * 2⁶</p>
+<h1 id="code-en-virgule-flottante-sur-32-bits-norme-ieee-754">Code en virgule flottante sur 32 bits Norme IEEE-754</h1>
+<p>La norme IEEE-754 est la norme la plus employée pour la representation des nombres à virgule flottant dans le domaine informatique . La première version de norme date 1985 . Il existe deux formats associés à cette norme : le format dit &quot;simple précision&quot; ( utilise 32 bits pour écrire un nombre décimal) et le format dit &quot;double précision&quot; ( sur 64 bits). </p>
+<h3 id="on-a-32-bits-pour-representer-ce-nombre">On a 32 bits pour representer ce nombre :</h3>
+<ul>
+<li>
+<p>Le premier bit represente le signe ( 0 pour <em>positif</em> , 1 pour <em>négatif</em> ) : 0</p>
+</li>
+<li>
+<p>Les 8 bit suivant representent p + 127 ( Pourquoi ? : Pour ne pas a avoir coder de négatif ... par exemple la puissance 2⁻⁵ , on code 122 qui est positif ) : 7 + 127 = 134 = (10000110)2</p>
+</li>
+<li>
+<p>Les 23 bits restants codent la parite après la virgule de la mantisse ( donc pas le &quot;1&quot; avant la virgule , ce serait inutile puisqu'on sait qu'il ne peux y avoir que &quot;1&quot;) : 111100101 </p>
+</li>
+</ul>
+
+	</div>
+	<hr class="post-end">
+	<footer class="post-info">
+    
+    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>589 Words</p>
+    
+    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2024-01-06</p>
+    
+	</footer>
+  </article>
+    
+  
+  <div class="post-nav thin">
+	
+	
+  </div>
+
+  
+</main>
+
+	  </div>
+	  
+	  
+
+
+
+<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+  <p>&copy; 2025 <a href="https:&#x2F;&#x2F;LeCodeEtMoi.github.io&#x2F;MonBlog&#x2F;">LaPetiteLigneDeCode</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+  <p>Made with <a href="https://www.getzola.org" target="_blank" rel="noopener">Zola</a> &#183; Theme <a href="https://github.com/VersBinarii/hermit_zola" target="_blank" rel="noopener">Hermit_Zola</a>
+	
+  </p>
+</footer>
+
+
+
+
+	</div>
+	
+	<script src="https://LeCodeEtMoi.github.io/MonBlog/js/main.js"></script>
+
+	<!-- Math rendering -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body, { delimiters: [ {left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}, {left: '\\[', right: '\\]', display: true}, {left: '\\(', right: '\\)', display: false}]});"></script>
+
+    
+
+	
+	<script src="https://LeCodeEtMoi.github.io/MonBlog/js/copy.js"></script>
+	
+	<script src="https://LeCodeEtMoi.github.io/MonBlog/js/main.js"></script>
+
+    
+    
+
+	
+  </body>
+</html>
