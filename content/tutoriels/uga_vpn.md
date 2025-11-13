@@ -182,3 +182,5 @@ scp -r projet/ VOTRE_LOGIN@iut2-dg-transit.u-ga.fr:~/backup/
 | Fichiers volumineux sans compression| Transfert lent.                                                   | Ajouter `-C`.                                                  |
 | Permissions locales perdues        | Le fichier distant hérite des permissions du serveur.             | Utiliser `-p` pour conserver timestamps et modes.              |
 | Interruption du transfert          | Reprise impossible avec `scp`.                                    | Préférer `rsync -e ssh …` pour les gros transferts ou les reprises. |
+
+ok ? 
